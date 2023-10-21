@@ -38,45 +38,15 @@
                                 </li>
                             </ul>
                             <ul class="pcoded-item pcoded-left-item">
-                                <li class="pcoded-hasmenu <?php if($main == 2){ echo "active";} ?>">
-                                    <a href="javascript:void(0)" class="waves-effect waves-dark">
-                                        <span class="pcoded-micon"><i class="ti-user"></i><b>BC</b></span>
-                                        <span class="pcoded-mtext">Users</span>
+                                <li class="<?php if($main == 2){ echo "active";} ?>">
+                                    <a href="student.php" class="waves-effect waves-dark">
+                                        <span class="pcoded-micon"><i class="ti-user"></i><b>FC</b></span>
+                                        <span class="pcoded-mtext">Students</span>
                                         <span class="pcoded-mcaret"></span>
                                     </a>
-                                    <ul class="pcoded-submenu">
-                                    <li class="<?php if($sub == 2){ echo "active";} ?>">
-                                            <a href="admin.php" class="waves-effect waves-dark">
-                                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                                                <span class="pcoded-mtext">Administrator</span>
-                                                <span class="pcoded-mcaret"></span>
-                                            </a>
-                                        </li>
-                                        <li class="<?php if($sub == 2){ echo "active";} ?>">
-                                            <a href="teachers.php" class="waves-effect waves-dark">
-                                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                                                <span class="pcoded-mtext">Teachers</span>
-                                                <span class="pcoded-mcaret"></span>
-                                            </a>
-                                        </li>
-                                        <li class="<?php if($sub == 3){ echo "active";} ?>">
-                                            <a href="assistant.php" class="waves-effect waves-dark">
-                                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                                                <span class="pcoded-mtext">Assistant</span>
-                                                <span class="pcoded-mcaret"></span>
-                                            </a>
-                                        </li>
-                                        <li class="<?php if($sub == 4){ echo "active";} ?>">
-                                            <a href="student.php" class="waves-effect waves-dark">
-                                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                                                <span class="pcoded-mtext">Students</span>
-                                                <span class="pcoded-mcaret"></span>
-                                            </a>
-                                        </li>
-                                        
-                                    </ul>
                                 </li>
                             </ul>
+                            
                             <ul class="pcoded-item pcoded-left-item">
                                 <li class="pcoded-hasmenu <?php if($main == 3){ echo "active";} ?>">
                                     <a href="javascript:void(0)" class="waves-effect waves-dark">
