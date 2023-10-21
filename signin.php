@@ -113,7 +113,7 @@
                                     </div>
                                     <div class="row m-t-30">
                                         <div class="col-md-12">
-                                            <a href="" class="btn btn-primary btn-md btn-block waves-effect waves-light text-center m-b-20">Sign in</a>
+                                            <a href="./admin/" class="btn btn-primary btn-md btn-block waves-effect waves-light text-center m-b-20">Sign in</a>
                                         </div>
                                     </div>
                                     <hr/>

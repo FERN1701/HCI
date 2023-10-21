@@ -233,7 +233,7 @@
                                             <div class="col-xl-6 col-md-12">
                                                 <div class="card table-card">
                                                     <div class="card-header">
-                                                        <h5>Member’s Logs</h5>
+                                                        <h5>Student Logs</h5>
                                                         <div class="card-header-right">
                                                             <ul class="list-unstyled card-option">
                                                                 <li><i class="fa fa fa-wrench open-card-option"></i></li>
