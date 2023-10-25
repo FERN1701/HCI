@@ -44,7 +44,7 @@
 
                                     <p class="lead text-white mt-lg-3 mb-lg-5">Shape the future with us! Join BSCS at WMSU, explore tech, hone skills, and innovate with experts!</p>
 
-                                    <a href="product.html" class="btn custom-btn">Explore products</a>
+                                    <a href="product.html" class="btn custom-btn">Explore Site</a>
                                 </div>
                             </div>
                         </div>
@@ -62,7 +62,7 @@
 
                                     <p class="lead text-white mt-lg-3 mb-lg-5">Unlock IT opportunities at WMSU! Delve into cybersecurity, data analytics, and software development for a thriving digital future!</p>
 
-                                    <a href="contact.html" class="btn custom-btn">Work with us</a>
+                                    <a href="contact.html" class="btn custom-btn">Study with us</a>
                                 </div>
                             </div>
                         </div>
@@ -80,7 +80,7 @@
 
                                     <p class="lead text-white mt-lg-3 mb-lg-5">Start your tech journey at WMSU! Enroll in our Associate in Technology program, gain diverse tech skills, and prepare for dynamic industry roles. Your future in tech begins here!</p>
 
-                                    <a href="contact.html" class="btn custom-btn">Work with us</a>
+                                    <a href="contact.html" class="btn custom-btn">Study with us</a>
                                 </div>
                             </div>
                         </div>

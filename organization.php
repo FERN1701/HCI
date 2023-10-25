@@ -40,7 +40,7 @@
                         <?php $x = 1; $y = 1;$z = 1; for ($i=0; $i < 5; $i++) { ?>
                             <div class="col-lg-4 mb-4 col-12">
                             <div class="team-thumb d-flex align-items-center">
-                                <img src="images/people/senior-man-wearing-white-face-mask-covid-19-campaign-with-design-space.jpeg" class="img-fluid custom-circle-image team-image me-4" alt="">
+                                <img src="./images/CCSlogo.png" class="img-fluid custom-circle-image team-image me-4" alt="">
 
                                 <div class="team-info">
                                     <h5 class="mb-0">Organization <?php echo $x++?></h5>

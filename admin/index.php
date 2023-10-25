@@ -215,8 +215,8 @@
                                                         <div class="card text-center order-visitor-card">
                                                             <div class="card-block">
                                                                 <h6 class="m-b-0">Today's Online</h6>
-                                                                <h4 class="m-t-15 m-b-15"><i class="fa fa-arrow-down m-r-15 text-c-red"></i>7652</h4>
-                                                                <p class="m-b-0 mb-5">48% From from Yesterday</p>
+                                                                <h4 class="m-t-15 m-b-15"><i class="fa fa-arrow-<?php if(rand(11,88)>50){echo "up";}else{ echo "down";}?> m-r-15 text-c-red"></i><?php echo rand(111,999)?></h4>
+                                                                <p class="m-b-0 mb-5"><?php echo rand(11,88)?>% From from Yesterday</p>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -233,7 +233,7 @@
                                             <div class="col-xl-6 col-md-12">
                                                 <div class="card table-card">
                                                     <div class="card-header">
-                                                        <h5>Member’s Logs</h5>
+                                                        <h5>User’s Logs</h5>
                                                         <div class="card-header-right">
                                                             <ul class="list-unstyled card-option">
                                                                 <li><i class="fa fa fa-wrench open-card-option"></i></li>
@@ -319,8 +319,8 @@
                                                         <div class="card text-center order-visitor-card">
                                                             <div class="card-block">
                                                                 <h6 class="m-b-0">Organizational Fees Track</h6>
-                                                                <h4 class="m-t-15 m-b-15"><i class="fa fa-arrow-down m-r-15 text-c-red"></i>7652</h4>
-                                                                <p class="m-b-0">48% From Yesterday</p>
+                                                                <h4 class="m-t-15 m-b-15"><i class="fa fa-arrow-<?php if(rand(11,88)>50){echo "up";}else{ echo "down";}?> m-r-15 text-c-red"></i><?php echo rand(111,999)?></h4>
+                                                                <p class="m-b-0"><?php echo rand(11,88)?>% From Yesterday</p>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -345,24 +345,16 @@
                                                                  </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-6">
+                                                    <div class="col-md-12">
                                                         <div class="card text-center order-visitor-card">
                                                             <div class="card-block">
                                                                 <h6 class="m-b-0">Unique Visitors</h6>
-                                                                <h4 class="m-t-15 m-b-15"><i class="fa fa-arrow-down m-r-15 text-c-red"></i>652</h4>
-                                                                <p class="m-b-0">36% From Last 6 Months</p>
+                                                                <h4 class="m-t-15 m-b-15"><i class="fa fa-arrow-<?php if(rand(11,88)>50){echo "up";}else{ echo "down";}?> m-r-15 text-c-red"></i>652</h4>
+                                                                <p class="m-b-0"><?php echo rand(11,88)?>% From Last 6 Months</p>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-6">
-                                                        <div class="card text-center order-visitor-card">
-                                                            <div class="card-block">
-                                                                <h6 class="m-b-0">Unique Visitors</h6>
-                                                                <h4 class="m-t-15 m-b-15"><i class="fa fa-arrow-down m-r-15 text-c-red"></i>652</h4>
-                                                                <p class="m-b-0">36% From Last 6 Months</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                                   
                                                    </div>
                                             </div>
 

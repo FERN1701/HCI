@@ -73,7 +73,7 @@
                                     <div class="col-md-8">
                                         <div class="page-header-title">
                                             <h5 class="m-b-10">Dashboard</h5>
-                                            <p class="m-b-0">PSITS</p>
+                                            <p class="m-b-0">CCS Gender Club</p>
                                         </div>
                                     </div>
                                     <div class="col-md-4">
@@ -257,7 +257,7 @@
                                                                     ?>
                                                                     <tr>
                                                                     <td>Student <?php echo $a++?></td>
-                                                                    <td><?php if(rand(1,3) == 1){ echo "CS Department";}elseif(rand(1,3) == 2){ echo "IT Department";}else{ echo "Associate in Technology";}?></td>
+                                                                    <td>Computer Science</td>
                                                                     <td>student@gmail.com</td>
                                                                     <td class="<?php if($r1 > 300){ echo "bg-success"; }else{ echo "bg-warning";}?>"><?php if($r1 > 300){ echo "fully paid"; }else{ echo "Unpaid";}?></td>
                                                                     <td class="<?php if($r2 > 300){ echo "bg-success"; }else{ echo "bg-warning";}?>"><?php if($r2 > 300){ echo "fully paid"; }else{ echo "Unpaid";}?></td>

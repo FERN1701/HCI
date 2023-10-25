@@ -2,7 +2,7 @@
 <html lang="en">
 
 
-<?php include "head.php"; $main = 2 ; $sub= 3;?>
+<?php include "head.php"; $main = 0 ; $sub= 0;?>
 
 <body>
    <div class="theme-loader">
@@ -72,7 +72,7 @@
                                 <div class="row align-items-center">
                                     <div class="col-md-8">
                                         <div class="page-header-title">
-                                            <h5 class="m-b-10">Assitant Pannels</h5>
+                                            <h5 class="m-b-10">Teachers Pannels</h5>
                                             <p class="m-b-0"><?php echo $title?></p>
                                         </div>
                                     </div>
@@ -100,29 +100,28 @@
                                             
                                                 <div class="card">
                                                     <div class="card-header">
-                                                        Assitant / <a  class="btn"  data-toggle="modal" data-target="#staticBackdrop" >Add Assitant</a>
+                                                    Sections / <a  class="btn"  data-toggle="modal" data-target="#staticBackdrop" >Add Section</a>
                                                     </div>
                                                     <div class="card-body">
                                                     <table id="example" class="display" style="width:100%">
                                                             <thead>
                                                                 <tr>
-                                                                    <th>Assitant Name</th>
+                                                                    <th>Section Name</th>
                                                                     <th>Department</th>
+                                                                    <th>Advisory</th>
                                                                     <th>email</th>
-                                                                    <th>Status</th>
                                                                     <th>Action</th>
                                                                    
                                                                 </tr>
                                                             </thead>
                                                             <tbody>
-                                                                <?php $a = 1; $b = 1; $c = 1; for ($i=0; $i < 3 ; $i++) {  ?>
+                                                                <?php $a = 1; $b = 1; $c = 1; for ($i=0; $i < 25 ; $i++) {  ?>
                                                                     <tr>
-                                                                    <td>Assitant <?php echo $a++?></td>
-                                                                    <td>Department <?php echo $b++?></td>
-                                                                    <td>assitant<?php echo $c++?>@gmail.com</td>
-                                                                    <td><?php if(rand(1,3) == 1){ echo "Validated";}elseif(rand(1,3) == 2){ echo "Validated";}else{ echo "Not Verified";}?></td>
-                                                                    
-                                                                    <td><a href="" data-toggle="modal" data-target="#view"><i class="fi fi-rr-eye text-secondary" style="font-size: 20px;"></i></a> <i class="fi fi-rr-lock text-danger" onclick="showSwalDialog()" style="font-size: 20px;"></i> <i class="fi fi-rr-trash-xmark text-danger" onclick="deletes()" style="font-size: 20px;"></i>  </td>
+                                                                    <td>Section <?php echo $a++?></td>
+                                                                    <td><?php if(rand(1,3) == 1){ echo "CS Department";}elseif(rand(1,3) == 2){ echo "IT Department";}else{ echo "Associate in Technology";}?></td>
+                                                                    <td>Advisory <?php echo $b++?></td>
+                                                                    <td>teacher<?php echo $c++?>@gmail.com</td>
+                                                                    <td> <i class="fi fi-rr-trash-xmark text-danger" onclick="deletes()" style="font-size: 20px;"></i> </td>
                                                                 </tr> 
                                                                 <?php }?>
                                                                
@@ -130,10 +129,10 @@
                                                             </tbody>
                                                             <tfoot>
                                                                 <tr>
-                                                                <th>Assitant Name</th>
+                                                                <th>Section Name</th>
                                                                     <th>Department</th>
+                                                                    <th>Advisory</th>
                                                                     <th>email</th>
-                                                                    <th>Status</th>
                                                                     <th>Action</th>
                                                                 </tr>
                                                             </tfoot>
@@ -146,6 +145,7 @@
                                         </div>
                                     </div>
                                     <!-- Button trigger modal -->
+
                                     <div class="modal fade " id="view" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                                     <div class="modal-dialog modal-dialog-centered">
                                         <div class="modal-content">
@@ -192,13 +192,12 @@
                                         </div>
                                     </div>
                                     </div>
-
                                     <!-- Modal -->
                                     <div class="modal fade " id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                                     <div class="modal-dialog modal-dialog-centered">
                                         <div class="modal-content">
                                         <div class="modal-header">
-                                            <h5 class="modal-title" id="staticBackdropLabel">Add Assitant</h5>
+                                            <h5 class="modal-title" id="staticBackdropLabel">Add New Section</h5>
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                             <span aria-hidden="true">&times;</span>
                                             </button>
@@ -206,21 +205,26 @@
                                         <div class="modal-body">
                                             <div class="row">
                                                 <div class="col-sm-6">
-                                                    <label for="">First Name</label>
+                                                    <label for="">Section Name</label>
                                                     <input type="text" name="" class="form-control" id="">
                                                 </div>
                                                 <div class="col-sm-6">
-                                                <label for="">Last Name</label>
-                                                    <input type="text" name="" class="form-control" id="">
+                                                <label for="">Advisory</label>
+                                                    <select name="" class="form-control" id="">
+                                                        <?php $az = 1; $bz = 1; $cz = 1;for ($i=0; $i < rand(10,20); $i++) { ?>
+                                                            <option value="">Teacher <?php echo $az++?></option>
+                                                       <?php }?>
+                                                    </select>
                                                 </div>
-                                                <div class="col-sm-6">
-                                                <label for="">Password</label>
-                                                    <input type="text" name="" class="form-control" id="">
+                                                <div class="col-sm-12">
+                                                <label for="">Department</label>
+                                                    <select name="" class="form-control" id="">
+                                                        <option value="">BS Computer Science</option>
+                                                        <option value="">BS Information Technology</option>
+                                                        <option value="">Associate In Technology</option>
+                                                    </select>
                                                 </div>
-                                                <div class="col-sm-6">
-                                                <label for="">Confirm Password</label>
-                                                    <input type="text" name="" class="form-control" id="">
-                                                </div>
+                                                
                                                 <div class="col-sm-6 mt-2">
                                                     <p class="btn btn-primary" onclick="showSwalDialog()">submit</p>
                                                 </div>

@@ -241,6 +241,7 @@
                                                             <thead>
                                                                 <tr>
                                                                     <th>Students</th>
+                                                                    <th>Section</th>
                                                                     <th>Department</th>
                                                                     <th>Email</th>
                                                                     <th>Fees 1</th>
@@ -257,7 +258,9 @@
                                                                     ?>
                                                                     <tr>
                                                                     <td>Student <?php echo $a++?></td>
-                                                                    <td>Computer Science</td>
+                                                                    <td>section <?php echo rand(1,4)?></td>
+                                                                    
+                                                                    <td><?php if(rand(1,3) == 1){ echo "CS Department";}elseif(rand(1,3) == 2){ echo "IT Department";}else{ echo "Associate in Technology";}?></td>
                                                                     <td>student@gmail.com</td>
                                                                     <td class="<?php if($r1 > 300){ echo "bg-success"; }else{ echo "bg-warning";}?>"><?php if($r1 > 300){ echo "fully paid"; }else{ echo "Unpaid";}?></td>
                                                                     <td class="<?php if($r2 > 300){ echo "bg-success"; }else{ echo "bg-warning";}?>"><?php if($r2 > 300){ echo "fully paid"; }else{ echo "Unpaid";}?></td>
@@ -636,7 +639,7 @@
                                                         <div class="card text-center order-visitor-card">
                                                             <div class="card-block">
                                                                 <h6 class="m-b-0">Best Blog Public engagement</h6>
-                                                                <h4 class="m-t-15 m-b-15"><i class="fa fa-arrow-down m-r-15 text-c-red"></i>Blog <?php echo rand(11,99)?></h4>
+                                                                <h4 class="m-t-15 m-b-15"><i class="fa fa-arrow-<?php if(rand(11,88)>50){echo "up";}else{ echo "down";}?> m-r-15 text-c-red"></i>Blog <?php echo rand(11,99)?></h4>
                                                               
                                                             </div>
                                                         </div>
@@ -645,7 +648,7 @@
                                                         <div class="card text-center order-visitor-card">
                                                             <div class="card-block">
                                                                 <h6 class="m-b-0">Organizational Public engagement</h6>
-                                                                <h4 class="m-t-15 m-b-15"><i class="fa fa-arrow-down m-r-15 text-c-red"></i><?php echo rand(11,99)?></h4>
+                                                                <h4 class="m-t-15 m-b-15"><i class="fa fa-arrow-<?php if(rand(11,88)>50){echo "up";}else{ echo "down";}?> m-r-15 text-c-red"></i><?php echo rand(11,99)?></h4>
                                                                 <p class="m-b-0"><?php echo rand(11,40)?>% From Yesterday</p>
                                                             </div>
                                                         </div>
@@ -654,7 +657,7 @@
                                                         <div class="card text-center order-visitor-card">
                                                             <div class="card-block">
                                                                 <h6 class="m-b-0">Organizational Public Event posts</h6>
-                                                                <h4 class="m-t-15 m-b-15"><i class="fa fa-arrow-down m-r-15 text-c-red"></i><?php echo rand(11,99)?></h4>
+                                                                <h4 class="m-t-15 m-b-15"><i class="fa fa-arrow-<?php if(rand(11,88)>50){echo "up";}else{ echo "down";}?> m-r-15 text-c-red"></i><?php echo rand(11,99)?></h4>
                                                                 <p class="m-b-0"><?php echo rand(11,40)?>% From Yesterday</p>
                                                             </div>
                                                         </div>

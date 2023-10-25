@@ -145,6 +145,11 @@
                                                             <div class="col-sm-12 mb-5 mr-3">
                                                                 <form action="">
                                                                     <div class="row">
+                                                                    <div class="col-sm-12">
+                                                                            <label for="">About Me</label>
+                                                                            <textarea name=""  class="form-control" id="" cols="30" rows="10"></textarea>
+                                                                        </div>
+                                                                        <hr>
                                                                         <div class="col-sm-6">
                                                                             <label for="">Email</label>
                                                                             <input type="text" name="" class="form-control" id="">

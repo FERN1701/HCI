@@ -100,16 +100,15 @@
                                             
                                                 <div class="card">
                                                     <div class="card-header">
-                                                        Assitant / <a  class="btn"  data-toggle="modal" data-target="#staticBackdrop" >Add Assitant</a>
+                                                    Administrator / <a  class="btn"  data-toggle="modal" data-target="#staticBackdrop" >Add Administrator</a>
                                                     </div>
                                                     <div class="card-body">
                                                     <table id="example" class="display" style="width:100%">
                                                             <thead>
                                                                 <tr>
-                                                                    <th>Assitant Name</th>
+                                                                    <th>Administrator Name</th>
                                                                     <th>Department</th>
                                                                     <th>email</th>
-                                                                    <th>Status</th>
                                                                     <th>Action</th>
                                                                    
                                                                 </tr>
@@ -117,11 +116,9 @@
                                                             <tbody>
                                                                 <?php $a = 1; $b = 1; $c = 1; for ($i=0; $i < 3 ; $i++) {  ?>
                                                                     <tr>
-                                                                    <td>Assitant <?php echo $a++?></td>
-                                                                    <td>Department <?php echo $b++?></td>
-                                                                    <td>assitant<?php echo $c++?>@gmail.com</td>
-                                                                    <td><?php if(rand(1,3) == 1){ echo "Validated";}elseif(rand(1,3) == 2){ echo "Validated";}else{ echo "Not Verified";}?></td>
-                                                                    
+                                                                    <td>Administrator <?php echo $a++?></td>
+                                                                    <td><?php if(rand(1,3) == 1){ echo "CS Department";}elseif(rand(1,3) == 2){ echo "IT Department";}else{ echo "Associate in Technology";}?></td>
+                                                                    <td>Administrator<?php echo $c++?>@gmail.com</td>
                                                                     <td><a href="" data-toggle="modal" data-target="#view"><i class="fi fi-rr-eye text-secondary" style="font-size: 20px;"></i></a> <i class="fi fi-rr-lock text-danger" onclick="showSwalDialog()" style="font-size: 20px;"></i> <i class="fi fi-rr-trash-xmark text-danger" onclick="deletes()" style="font-size: 20px;"></i>  </td>
                                                                 </tr> 
                                                                 <?php }?>
@@ -130,10 +127,9 @@
                                                             </tbody>
                                                             <tfoot>
                                                                 <tr>
-                                                                <th>Assitant Name</th>
+                                                                <th>Administrator Name</th>
                                                                     <th>Department</th>
                                                                     <th>email</th>
-                                                                    <th>Status</th>
                                                                     <th>Action</th>
                                                                 </tr>
                                                             </tfoot>

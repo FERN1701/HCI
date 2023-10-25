@@ -107,7 +107,6 @@
                                                             <thead>
                                                                 <tr>
                                                                     <th>Student Name</th>
-                                                                    <th>Department</th>
                                                                     <th>email</th>
                                                                     <th>Action</th>
                                                                    
@@ -117,7 +116,6 @@
                                                                 <?php $a = 1; $b = 1; $c = 1; for ($i=0; $i < 25 ; $i++) {  ?>
                                                                     <tr>
                                                                     <td>student <?php echo $a++?></td>
-                                                                    <td>Department <?php echo $b++?></td>
                                                                     <td>student<?php echo $c++?>@gmail.com</td>
                                                                     <td><a href="" data-toggle="modal" data-target="#view"><i class="fi fi-rr-eye text-secondary" style="font-size: 20px;"></i></a> <i class="fi fi-rr-trash-xmark text-danger" onclick="deletes()" style="font-size: 20px;"></i>  </td>
                                                                 </tr> 
@@ -128,7 +126,6 @@
                                                             <tfoot>
                                                                 <tr>
                                                                 <th>Student Name</th>
-                                                                    <th>Department</th>
                                                                     <th>email</th>
                                                                     <th>Action</th>
                                                                 </tr>
@@ -164,6 +161,11 @@
                                                 <label for="">Last Name</label>
                                                     <input type="text" name="" class="form-control" id="">
                                                 </div>
+                                                <div class="col-sm-12">
+                                                <label for="">Email</label>
+                                                    <input type="text" name="" class="form-control" id="">
+                                                </div>
+                                                
                                                 <div class="col-sm-6">
                                                 <label for="">Password</label>
                                                     <input type="text" name="" class="form-control" id="">

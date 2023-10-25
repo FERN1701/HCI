@@ -108,7 +108,8 @@
                                                                 <tr>
                                                                     <th>Teachers Name</th>
                                                                     <th>Department</th>
-                                                                    <th>email</th>
+                                                                    <th>Email</th>
+                                                                    <th>Status</th>
                                                                     <th>Action</th>
                                                                    
                                                                 </tr>
@@ -117,9 +118,10 @@
                                                                 <?php $a = 1; $b = 1; $c = 1; for ($i=0; $i < 25 ; $i++) {  ?>
                                                                     <tr>
                                                                     <td>teacher <?php echo $a++?></td>
-                                                                    <td>Department <?php echo $b++?></td>
+                                                                    <td><?php if(rand(1,3) == 1){ echo "CS Department";}elseif(rand(1,3) == 2){ echo "IT Department";}else{ echo "Associate in Technology";}?></td>
                                                                     <td>teacher<?php echo $c++?>@gmail.com</td>
-                                                                    <td><a href="" data-toggle="modal" data-target="#view"><i class="fi fi-rr-eye text-secondary" style="font-size: 20px;"></i></a> <a href="" data-toggle="modal" data-target="#view"><i class="fi fi-rr-edit text-secondary" style="font-size: 20px;"></i></a> <i class="fi fi-rr-trash-xmark text-danger" onclick="deletes()" style="font-size: 20px;"></i> </td>
+                                                                    <td><?php if(rand(1,3) == 1){ echo "Validated";}elseif(rand(1,3) == 2){ echo "Validated";}else{ echo "Not Verified";}?></td>
+                                                                    <td><a href="" data-toggle="modal" data-target="#view"><i class="fi fi-rr-eye text-secondary" style="font-size: 20px;"></i></a> <a href="" data-toggle="modal" data-target="#edit"><i class="fi fi-rr-edit text-secondary" style="font-size: 20px;"></i></a> <i class="fi fi-rr-trash-xmark text-danger" onclick="deletes()" style="font-size: 20px;"></i> </td>
                                                                 </tr> 
                                                                 <?php }?>
                                                                
@@ -129,7 +131,8 @@
                                                                 <tr>
                                                                 <th>Teachers Name</th>
                                                                     <th>Department</th>
-                                                                    <th>email</th>
+                                                                    <th>Email</th>
+                                                                    <th>Status</th>
                                                                     <th>Action</th>
                                                                 </tr>
                                                             </tfoot>
@@ -189,6 +192,57 @@
                                         </div>
                                     </div>
                                     </div>
+
+
+
+                                    <div class="modal fade " id="edit" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="editLabel">Edit Information</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="row">
+                                                <div class="col-sm-4"><img src="assets/images/avatar-4.jpg" class="img-radius" alt="User-Profile-Image"></div>
+                                                
+                                                <div class="col-sm-8">
+                                                    <div class="row">
+                                                        <div class="col-sm-6">
+                                                            <label for="">First Name</label>
+                                                            <input type="text" class="form-control" name="" id="">
+                                                        </div>
+                                                        <div class="col-sm-6">
+                                                            <label for="">Last Name</label>
+                                                            <input type="text" class="form-control" name="" id="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <label for="">Age</label>
+                                                    <input type="text" class="form-control" name="" id="">
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <label for="">Contact</label>
+                                                    <input type="text" class="form-control" name="" id="">
+                                                </div>
+                                                <div class="col-sm-12">
+                                                    <label for="">Email</label>
+                                                    <input type="text" class="form-control" name="" id="">
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                                    <p class="btn btn-primary" onclick="showSwalDialog()">submit</p>
+
+                                            <p type="button" class="btn btn-secondary" data-dismiss="modal">Close</p>
+                                             </div>
+                                        </div>
+                                    </div>
+                                    </div>
                                     <!-- Modal -->
                                     <div class="modal fade " id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                                     <div class="modal-dialog modal-dialog-centered">
@@ -200,7 +254,7 @@
                                             </button>
                                         </div>
                                         <div class="modal-body">
-                                            <div class="row">
+                                        <div class="row">
                                                 <div class="col-sm-6">
                                                     <label for="">First Name</label>
                                                     <input type="text" name="" class="form-control" id="">
@@ -210,6 +264,18 @@
                                                     <input type="text" name="" class="form-control" id="">
                                                 </div>
                                                 <div class="col-sm-6">
+                                                <label for="">Email</label>
+                                                    <input type="text" name="" class="form-control" id="">
+                                                </div>
+                                                <div class="col-sm-6">
+                                                <label for="">Department</label>
+                                                <select name="" class="form-control" id="">
+                                                        <option value="">BS Computer Science</option>
+                                                        <option value="">BS Information Technology</option>
+                                                        <option value="">Associate In Technology</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-sm-6">
                                                 <label for="">Password</label>
                                                     <input type="text" name="" class="form-control" id="">
                                                 </div>
@@ -217,6 +283,7 @@
                                                 <label for="">Confirm Password</label>
                                                     <input type="text" name="" class="form-control" id="">
                                                 </div>
+                                                
                                                 <div class="col-sm-6 mt-2">
                                                     <p class="btn btn-primary" onclick="showSwalDialog()">submit</p>
                                                 </div>

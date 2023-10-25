@@ -5,7 +5,7 @@
                                 <div class="main-menu-header">
                                     <img class="img-80 img-radius" src="assets/images/avatar-4.jpg" alt="User-Profile-Image">
                                     <div class="user-details">
-                                        <span id="more-details">John Doe<i class="fa fa-caret-down"></i></span>
+                                        <span id="more-details">Assitant Pannel <i class="fa fa-caret-down"></i></span>
                                     </div>
                                 </div>
                                 <div class="main-menu-content">
@@ -45,6 +45,7 @@
                                         <span class="pcoded-mcaret"></span>
                                     </a>
                                     <ul class="pcoded-submenu">
+                                    
                                         <li class="<?php if($sub == 2){ echo "active";} ?>">
                                             <a href="teachers.php" class="waves-effect waves-dark">
                                                 <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
@@ -52,7 +53,7 @@
                                                 <span class="pcoded-mcaret"></span>
                                             </a>
                                         </li>
-                                    
+                                        
                                         <li class="<?php if($sub == 4){ echo "active";} ?>">
                                             <a href="student.php" class="waves-effect waves-dark">
                                                 <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
@@ -64,43 +65,73 @@
                                     </ul>
                                 </li>
                             </ul>
+                            
                             <ul class="pcoded-item pcoded-left-item">
-                                <li class="pcoded-hasmenu <?php if($main == 3){ echo "active";} ?>">
+                                <li class="pcoded-hasmenu ">
                                     <a href="javascript:void(0)" class="waves-effect waves-dark">
-                                        <span class="pcoded-micon"><i class="fi fi-rr-school"></i></i><b>BC</b></span>
-                                        <span class="pcoded-mtext">Departments</span>
+                                        <span class="pcoded-micon"><i class="fi fi-rr-layers"></i></i><b>BC</b></span>
+                                        <span class="pcoded-mtext">Sections</span>
                                         <span class="pcoded-mcaret"></span>
                                     </a>
                                     <ul class="pcoded-submenu">
-                                        <li class="<?php if($sub == 1){ echo "active";} ?>">
-                                            <a href="csdepartment.php" class="waves-effect waves-dark">
+                                        <li class="">
+                                            <a href="sections.php" class="waves-effect waves-dark">
                                                 <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                                                <span class="pcoded-mtext">BS Computer Science</span>
+                                                <span class="pcoded-mtext">List of Sections</span>
                                                 <span class="pcoded-mcaret"></span>
                                             </a>
                                         </li>
-                                        <li class="<?php if($sub == 2){ echo "active";} ?>">
-                                            <a href="itdepartment.php" class="waves-effect waves-dark">
-                                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                                                <span class="pcoded-mtext">BS Information Technology</span>
-                                                <span class="pcoded-mcaret"></span>
-                                            </a>
-                                        </li>
-                                        <li class="<?php if($sub == 3){ echo "active";} ?>">
-                                            <a href="csact.php" class="waves-effect waves-dark">
-                                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                                                <span class="pcoded-mtext">Associate in Technology</span>
-                                                <span class="pcoded-mcaret"></span>
-                                            </a>
-                                        </li>
-
-                                        
-                                        
+                                       
                                     </ul>
                                 </li>
                             </ul>
                             
-                            
+                            <ul class="pcoded-item pcoded-left-item">
+                                <li class="pcoded-hasmenu <?php if($main == 4){ echo "active";} ?>">
+                                    <a href="javascript:void(0)" class="waves-effect waves-dark">
+                                        <span class="pcoded-micon"><i class="fi fi-rr-users-alt"></i><b>BC</b></span>
+                                        <span class="pcoded-mtext">Organizations</span>
+                                        <span class="pcoded-mcaret"></span>
+                                    </a>
+                                    <ul class="pcoded-submenu">
+                                    <li class=" ">
+                                            <a href="gdsc.php" class="waves-effect waves-dark">
+                                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                <span class="pcoded-mtext">GDSC Crimson</span>
+                                                <span class="pcoded-mcaret"></span>
+                                            </a>
+                                        </li>
+                                        <li class=" ">
+                                            <a href="council.php" class="waves-effect waves-dark">
+                                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                <span class="pcoded-mtext">CCS Council</span>
+                                                <span class="pcoded-mcaret"></span>
+                                            </a>
+                                        </li>
+                                        <li class=" ">
+                                            <a href="gender.php" class="waves-effect waves-dark">
+                                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                <span class="pcoded-mtext">Gender Club</span>
+                                                <span class="pcoded-mcaret"></span>
+                                            </a>
+                                        </li>
+                                        <li class=" ">
+                                            <a href="psits.php" class="waves-effect waves-dark">
+                                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                <span class="pcoded-mtext">PSITS </span>
+                                                <span class="pcoded-mcaret"></span>
+                                            </a>
+                                        </li>
+                                        <li class=" ">
+                                            <a href="venom.php" class="waves-effect waves-dark">
+                                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                <span class="pcoded-mtext">Venom Publication</span>
+                                                <span class="pcoded-mcaret"></span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
                            
                             <ul class="pcoded-item pcoded-left-item">
                                 <li class="<?php if($main == 5){ echo "active";} ?>">

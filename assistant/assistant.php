@@ -109,7 +109,6 @@
                                                                     <th>Assitant Name</th>
                                                                     <th>Department</th>
                                                                     <th>email</th>
-                                                                    <th>Status</th>
                                                                     <th>Action</th>
                                                                    
                                                                 </tr>
@@ -120,8 +119,6 @@
                                                                     <td>Assitant <?php echo $a++?></td>
                                                                     <td>Department <?php echo $b++?></td>
                                                                     <td>assitant<?php echo $c++?>@gmail.com</td>
-                                                                    <td><?php if(rand(1,3) == 1){ echo "Validated";}elseif(rand(1,3) == 2){ echo "Validated";}else{ echo "Not Verified";}?></td>
-                                                                    
                                                                     <td><a href="" data-toggle="modal" data-target="#view"><i class="fi fi-rr-eye text-secondary" style="font-size: 20px;"></i></a> <i class="fi fi-rr-lock text-danger" onclick="showSwalDialog()" style="font-size: 20px;"></i> <i class="fi fi-rr-trash-xmark text-danger" onclick="deletes()" style="font-size: 20px;"></i>  </td>
                                                                 </tr> 
                                                                 <?php }?>
@@ -133,7 +130,6 @@
                                                                 <th>Assitant Name</th>
                                                                     <th>Department</th>
                                                                     <th>email</th>
-                                                                    <th>Status</th>
                                                                     <th>Action</th>
                                                                 </tr>
                                                             </tfoot>

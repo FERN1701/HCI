@@ -4,6 +4,7 @@
 
 <?php include "head.php"; $main = 4; $sub= 0;?>
 
+
 <body>
    <div class="theme-loader">
         <div class="loader-track">
@@ -73,7 +74,7 @@
                                     <div class="col-md-8">
                                         <div class="page-header-title">
                                             <h5 class="m-b-10">Dashboard</h5>
-                                            <p class="m-b-0">PSITS</p>
+                                            <p class="m-b-0">Google Developers Student Clubs </p>
                                         </div>
                                     </div>
                                     <div class="col-md-4">
@@ -98,42 +99,34 @@
                                         <div class="row">
                                             <!-- Material statustic card start -->
                                             <div class="col-xl-4 col-md-12">
-                                                <div class="card mat-stat-card">
+                                               
+                                                <div class="card mat-stat-card" data-toggle="modal" data-target="#staticBackdrop">
                                                     <div class="card-block">
                                                         <div class="row align-items-center b-b-default">
-                                                            <div class="col-sm-6 b-r-default p-b-20 p-t-20" data-toggle="modal" data-target="#officer">
+                                                            <div class="col-sm-12 b-r-default p-b-20 p-t-20" >
                                                                 <div class="row align-items-center text-center">
                                                                     <div class="col-4 p-r-0">
-                                                                    <i class="fi fi-rr-circle-user f-24"></i>
+                                                                        <i class="far fa-user text-primary f-24"></i>
                                                                     </div>
                                                                     <div class="col-8 p-l-0">
-                                                                        <h5><?php echo rand(11,44)?></h5>
+                                                                        <h5>16</h5>
                                                                         <p class="text-muted m-b-0">Officers</p>
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <div class="col-sm-6 p-b-20 p-t-20" data-toggle="modal" data-target="#members">
-                                                                <div class="row align-items-center text-center">
-                                                                    <div class="col-4 p-r-0">
-                                                                    <i class="fi fi-rr-users-alt f-24"></i>
-                                                                    </div>
-                                                                    <div class="col-8 p-l-0">
-                                                                        <h5><?php echo rand(111,999)?></h5>
-                                                                        <p class="text-muted m-b-0">Members</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
+                                                            
                                                         </div>
                                                         
                                                     </div>
                                                 </div>
                                             </div>
 
-                                            <div class="modal fade " id="officer" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+
+                                            <div class="modal fade " id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                                                 <div class="modal-dialog modal-dialog-centered">
                                                     <div class="modal-content">
                                                         <div class="modal-header">
-                                                            <h5 class="modal-title" id="officerLabel">Officers <br>
+                                                            <h5 class="modal-title" id="staticBackdropLabel">GDSC Crimson Officers <br>
                                                             <p data-toggle="modal" data-target="#add" >Add Officers</p></h5>
                                                             <br>
                                                             
@@ -155,7 +148,7 @@
                                                                 <?php $a = 1; $b = 1; $c = 1; for ($i=0; $i < 15 ; $i++) {  ?>
                                                                     <tr>
                                                                     <td>Officer <?php echo $a++?></td>
-                                                                    <td>position <?php echo $b++?></td>
+                                                                    <td>Department <?php echo $b++?></td>
                                                                     <td><a href="mailto:officer<?php echo $c++?>@gmail.com">officer<?php echo $c++?>@gmail.com</a></td>
                                                                     </tr> 
                                                                 <?php }?>
@@ -164,8 +157,8 @@
                                                             </tbody>
                                                             <tfoot>
                                                                 <tr>
-                                                                <th>Officer Name</th>
-                                                                    <th>Position</th>
+                                                                <th>Teachers Name</th>
+                                                                    <th>Department</th>
                                                                     <th>email</th>
                                                                    </tr>
                                                             </tfoot>
@@ -183,7 +176,7 @@
                                                 <div class="modal-dialog modal-dialog-centered">
                                                     <div class="modal-content">
                                                         <div class="modal-header">
-                                                            <h5 class="modal-title" id="blogLabel"> Blogs</h5>
+                                                            <h5 class="modal-title" id="blogLabel">GDSC Crimson Blogs</h5>
                                                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                                     <span aria-hidden="true">&times;</span>
                                                                 </button>
@@ -227,72 +220,11 @@
 
 
 
-                                                <div class="modal fade  " id="fees" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                                                <div class="modal-dialog  modal-lg">
-                                                    <div class="modal-content">
-                                                        <div class="modal-header">
-                                                            <h5 class="modal-title" id="feesLabel"> Organization Fees</h5>
-                                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                                    <span aria-hidden="true">&times;</span>
-                                                                </button>
-                                                        </div>
-                                                        <div class="modal-body">
-                                                        <table id="example44" class="display" style="width:100%">
-                                                            <thead>
-                                                                <tr>
-                                                                    <th>Students</th>
-                                                                    <th>Department</th>
-                                                                    <th>Email</th>
-                                                                    <th>Fees 1</th>
-                                                                    <th>Fees 2</th>
-                                                                    <th>Fees 3</th>
-                                                                    
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <?php $a = 1; $b = 1; $c = 1;  ;for ($i=0; $i < 30  ; $i++) { 
-                                                                    $r1 = rand(111,999);
-                                                                    $r2 = rand(111,999);
-                                                                    $r3 = rand(111,999);
-                                                                    ?>
-                                                                    <tr>
-                                                                    <td>Student <?php echo $a++?></td>
-                                                                    <td><?php if(rand(1,3) == 1){ echo "CS Department";}elseif(rand(1,3) == 2){ echo "IT Department";}else{ echo "Associate in Technology";}?></td>
-                                                                    <td>student@gmail.com</td>
-                                                                    <td class="<?php if($r1 > 300){ echo "bg-success"; }else{ echo "bg-warning";}?>"><?php if($r1 > 300){ echo "fully paid"; }else{ echo "Unpaid";}?></td>
-                                                                    <td class="<?php if($r2 > 300){ echo "bg-success"; }else{ echo "bg-warning";}?>"><?php if($r2 > 300){ echo "fully paid"; }else{ echo "Unpaid";}?></td>
-                                                                    <td class="<?php if($r3 > 300){ echo "bg-success"; }else{ echo "bg-warning";}?>"><?php if($r3 > 300){ echo "fully paid"; }else{ echo "Unpaid";}?></td>
-                                                                    
-                                                                     </tr> 
-                                                                <?php }?>
-                                                                
-                                                            </tbody>
-                                                            <tfoot>
-                                                                <tr>
-                                                                <th>Students</th>
-                                                                    <th>Department</th>
-                                                                    <th>Email</th>
-                                                                    <th>Fees 1</th>
-                                                                    <th>Fees 2</th>
-                                                                    <th>Fees 3</th>
-                                                                </tr>
-                                                            </tfoot>
-                                                        </table>
-                                                        </div>
-                                                        <div class="modal-footer">
-                                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                                            </div>
-                                                        </div>
-                                                </div>
-                                                </div>
-
-
-
                                                 <div class="modal fade " id="Announcement" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                                                 <div class="modal-dialog modal-dialog-centered">
                                                     <div class="modal-content">
                                                         <div class="modal-header">
-                                                            <h5 class="modal-title" id="AnnouncementLabel">Announcement</h5>
+                                                            <h5 class="modal-title" id="AnnouncementLabel">GDSC Announcement</h5>
                                                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                                     <span aria-hidden="true">&times;</span>
                                                                 </button>
@@ -322,53 +254,6 @@
                                                                 <tr>
                                                                 <th>Teachers Name</th>
                                                                     <th>Department</th>
-                                                                    <th>Action</th>
-                                                                   </tr>
-                                                            </tfoot>
-                                                        </table>
-                                                        </div>
-                                                        <div class="modal-footer">
-                                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                                            </div>
-                                                        </div>
-                                                </div>
-                                                </div>
-
-
-                                                <div class="modal fade " id="members" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                                                <div class="modal-dialog modal-dialog-centered">
-                                                    <div class="modal-content">
-                                                        <div class="modal-header">
-                                                            <h5 class="modal-title" id="AnnouncementLabel">Members</h5>
-                                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                                    <span aria-hidden="true">&times;</span>
-                                                                </button>
-                                                        </div>
-                                                        <div class="modal-body">
-                                                        <table id="example33" class="display" style="width:100%">
-                                                            <thead>
-                                                                <tr>
-                                                                    <th>Members</th>
-                                                                    <th>Added By</th>
-                                                                    <th>Action</th>
-                                                                   
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <?php $a = 1; $b = 1; $c = 1; for ($i=0; $i < 15 ; $i++) {  ?>
-                                                                    <tr>
-                                                                    <td>Name <?php echo $a++?></td>
-                                                                    <td>Added by name<?php echo $b++?></td>
-                                                                    <td><a href="" class="p-1 btn-primary">view</a></td>
-                                                                    </tr> 
-                                                                <?php }?>
-                                                               
-                                                                
-                                                            </tbody>
-                                                            <tfoot>
-                                                                <tr>
-                                                                <th>Members</th>
-                                                                    <th>Added By</th>
                                                                     <th>Action</th>
                                                                    </tr>
                                                             </tfoot>
@@ -507,37 +392,15 @@
                                                 </div>
                                             </div>
                                             <div class="col-xl-4 col-md-12">
-                                                <div class="card mat-stat-card">
-                                                    <div class="card-block">
-                                                        <div class="row align-items-center b-b-default">
-                                                            <div class="col-sm-6 b-r-default p-b-20 p-t-20" data-toggle="modal" data-target="#fees">
-                                                                <div class="row align-items-center text-center">
-                                                                    <div class="col-4 p-r-0">
-                                                                    <i class="fi fi-rr-chat-arrow-grow f-24"></i>
-                                                                    </div>
-                                                                    <div class="col-8 p-l-0">
-                                                                        <h5><?php echo rand(111,999)?></h5>
-                                                                        <p class="text-muted m-b-0">Fees</p>
-                                                                    </div>
+                                            <div class="card bg-c-red total-card" data-toggle="modal" data-target="#block">
+                                                            <div class="card-block">
+                                                                <div class="text-left">
+                                                                    <h4> <i class="fa fa-low-vision m-r-15 "></i><?php echo rand(11,99)?></h4>
+                                                                    <p class="m-0">Block Users</p>
                                                                 </div>
-                                                            </div>
-                                                            <div class="col-sm-6 p-b-20 p-t-20" data-toggle="modal" data-target="#block">
-                                                                <div class="row align-items-center text-center">
-                                                                    <div class="col-4 p-r-0">
-                                                                    <i class="fa fa-low-vision m-r-15 f-24"></i>
-                                                                    </div>
-                                                                    <div class="col-8 p-l-0">
-                                                                        <h5><?php echo rand(111,999)?></h5>
-                                                                        <p class="text-muted m-b-0">Block Users</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
+                                                                 </div>
                                                         </div>
-                                                        
-                                                    </div>
-                                                </div>
                                             </div>
-                                            
                                             
                                             
                                             <!-- Material statustic card end -->
@@ -571,7 +434,7 @@
                                                                                 <img src="assets/images/avatar-4.jpg" alt="user image" class="img-radius img-40 align-top m-r-15">
                                                                                 <div class="d-inline-block">
                                                                                     <h6>Shirley Hoe</h6>
-                                                                                    <p class="text-muted m-b-0">President</p>
+                                                                                    <p class="text-muted m-b-0">GDSC lead</p>
                                                                                 </div>
                                                                             </div>
                                                                         </td>
@@ -585,7 +448,7 @@
                                                                                 <img src="assets/images/avatar-2.jpg" alt="user image" class="img-radius img-40 align-top m-r-15">
                                                                                 <div class="d-inline-block">
                                                                                     <h6>James Alexander</h6>
-                                                                                    <p class="text-muted m-b-0">Vice President</p>
+                                                                                    <p class="text-muted m-b-0">GDSC Technical Lead</p>
                                                                                 </div>
                                                                             </div>
                                                                         </td>
@@ -599,7 +462,7 @@
                                                                                 <img src="assets/images/avatar-4.jpg" alt="user image" class="img-radius img-40 align-top m-r-15">
                                                                                 <div class="d-inline-block">
                                                                                     <h6>Shirley Hoe</h6>
-                                                                                    <p class="text-muted m-b-0">Secretary</p>
+                                                                                    <p class="text-muted m-b-0">GDSC DevOps</p>
                                                                                 </div>
                                                                             </div>
                                                                         </td>
@@ -613,7 +476,7 @@
                                                                                 <img src="assets/images/avatar-2.jpg" alt="user image" class="img-radius img-40 align-top m-r-15">
                                                                                 <div class="d-inline-block">
                                                                                     <h6>Nick Xander</h6>
-                                                                                    <p class="text-muted m-b-0">Secretary</p>
+                                                                                    <p class="text-muted m-b-0">GDSC Creative Lead</p>
                                                                                 </div>
                                                                             </div>
                                                                         </td>
@@ -635,9 +498,9 @@
                                                     <div class="col-md-12">
                                                         <div class="card text-center order-visitor-card">
                                                             <div class="card-block">
-                                                                <h6 class="m-b-0">Best Blog Public engagement</h6>
-                                                                <h4 class="m-t-15 m-b-15"><i class="fa fa-arrow-down m-r-15 text-c-red"></i>Blog <?php echo rand(11,99)?></h4>
-                                                              
+                                                                <h6 class="m-b-0">Organizational Public engagement</h6>
+                                                                <h4 class="m-t-15 m-b-15"><i class="fa fa-arrow-down m-r-15 text-c-red"></i><?php echo rand(11,99)?></h4>
+                                                                <p class="m-b-0">48% From Yesterday</p>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -646,16 +509,16 @@
                                                             <div class="card-block">
                                                                 <h6 class="m-b-0">Organizational Public engagement</h6>
                                                                 <h4 class="m-t-15 m-b-15"><i class="fa fa-arrow-down m-r-15 text-c-red"></i><?php echo rand(11,99)?></h4>
-                                                                <p class="m-b-0"><?php echo rand(11,40)?>% From Yesterday</p>
+                                                                <p class="m-b-0">48% From Yesterday</p>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="col-md-12">
                                                         <div class="card text-center order-visitor-card">
                                                             <div class="card-block">
-                                                                <h6 class="m-b-0">Organizational Public Event posts</h6>
+                                                                <h6 class="m-b-0">Organizational Public engagement</h6>
                                                                 <h4 class="m-t-15 m-b-15"><i class="fa fa-arrow-down m-r-15 text-c-red"></i><?php echo rand(11,99)?></h4>
-                                                                <p class="m-b-0"><?php echo rand(11,40)?>% From Yesterday</p>
+                                                                <p class="m-b-0">48% From Yesterday</p>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -680,9 +543,8 @@
     new DataTable('#example1');
     new DataTable('#example2');
     new DataTable('#example3');
+    
     new DataTable('#example4');
-    new DataTable('#example33');
-    new DataTable('#example44');
     </script>
     <?php include "footer.php"?>
 </body>

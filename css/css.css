@@ -183,7 +183,7 @@ strong {
 }
 
 .spinner {
-  border: 1px solid transparent;
+  border: 2px solid transparent;
   border-radius: 5px;
   position: relative;
 }
@@ -199,7 +199,7 @@ strong {
   margin-top: -10px;
   margin-left: -23px;
   border-radius: 50%;
-  border: 1px solid #959595;
+  border: 4px solid #959595;
   border-top-color: var(--white-color);
   animation: spinner .9s linear infinite;
 }

@@ -73,7 +73,7 @@
                                     <div class="col-md-8">
                                         <div class="page-header-title">
                                             <h5 class="m-b-10">Dashboard</h5>
-                                            <p class="m-b-0">College of Information Technology</p>
+                                            <p class="m-b-0">Department of Computer Sceince</p>
                                         </div>
                                     </div>
                                     <div class="col-md-4">

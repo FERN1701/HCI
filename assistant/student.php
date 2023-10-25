@@ -108,17 +108,19 @@
                                                                 <tr>
                                                                     <th>Student Name</th>
                                                                     <th>Department</th>
-                                                                    <th>email</th>
+                                                                    <th>Email</th>
+                                                                    <th>Status</th>
                                                                     <th>Action</th>
                                                                    
                                                                 </tr>
                                                             </thead>
                                                             <tbody>
-                                                                <?php $a = 1; $b = 1; $c = 1; for ($i=0; $i < 25 ; $i++) {  ?>
+                                                                <?php $a = 1; $b = 1; $c = 1; for ($i=0; $i < 700 ; $i++) {  ?>
                                                                     <tr>
                                                                     <td>student <?php echo $a++?></td>
-                                                                    <td>Department <?php echo $b++?></td>
+                                                                    <td><?php if(rand(1,3) == 1){ echo "CS Department";}elseif(rand(1,3) == 2){ echo "IT Department";}else{ echo "Associate in Technology";}?></td>
                                                                     <td>student<?php echo $c++?>@gmail.com</td>
+                                                                    <td><?php if(rand(1,3) == 1){ echo "Validated";}elseif(rand(1,3) == 2){ echo "Validated";}else{ echo "Not Verified";}?></td>
                                                                     <td><a href="" data-toggle="modal" data-target="#view"><i class="fi fi-rr-eye text-secondary" style="font-size: 20px;"></i></a> <i class="fi fi-rr-trash-xmark text-danger" onclick="deletes()" style="font-size: 20px;"></i>  </td>
                                                                 </tr> 
                                                                 <?php }?>
@@ -129,7 +131,8 @@
                                                                 <tr>
                                                                 <th>Student Name</th>
                                                                     <th>Department</th>
-                                                                    <th>email</th>
+                                                                    <th>Email</th>
+                                                                    <th>Status</th>
                                                                     <th>Action</th>
                                                                 </tr>
                                                             </tfoot>
@@ -163,6 +166,18 @@
                                                 <div class="col-sm-6">
                                                 <label for="">Last Name</label>
                                                     <input type="text" name="" class="form-control" id="">
+                                                </div>
+                                                <div class="col-sm-6">
+                                                <label for="">Email</label>
+                                                    <input type="text" name="" class="form-control" id="">
+                                                </div>
+                                                <div class="col-sm-6">
+                                                <label for="">Department</label>
+                                                <select name="" class="form-control" id="">
+                                                        <option value="">BS Computer Science</option>
+                                                        <option value="">BS Information Technology</option>
+                                                        <option value="">Associate In Technology</option>
+                                                    </select>
                                                 </div>
                                                 <div class="col-sm-6">
                                                 <label for="">Password</label>

@@ -15,10 +15,6 @@
                         <ul class="footer-menu d-flex flex-wrap">
                             <li class="footer-menu-item"><a href="#" class="footer-menu-link">About</a></li>
 
-                            <li class="footer-menu-item"><a href="#" class="footer-menu-link">Products</a></li>
-
-                            <li class="footer-menu-item"><a href="#" class="footer-menu-link">Privacy policy</a></li>
-
                             <li class="footer-menu-item"><a href="#" class="footer-menu-link">FAQs</a></li>
 
                             <li class="footer-menu-item"><a href="#" class="footer-menu-link">Contact</a></li>
