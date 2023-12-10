@@ -100,7 +100,7 @@
                                             
                                                 <div class="card">
                                                     <div class="card-header">
-                                                        Students / <a  class="btn"  data-toggle="modal" data-target="#staticBackdrop" >Add Students</a>
+                                                        Advisory Students of School Year 20## - 20## 
                                                     </div>
                                                     <div class="card-body">
                                                     <table id="example" class="display" style="width:100%">
@@ -117,7 +117,7 @@
                                                                     <tr>
                                                                     <td>student <?php echo $a++?></td>
                                                                     <td>student<?php echo $c++?>@gmail.com</td>
-                                                                    <td><a href="" data-toggle="modal" data-target="#view"><i class="fi fi-rr-eye text-secondary" style="font-size: 20px;"></i></a> <i class="fi fi-rr-trash-xmark text-danger" onclick="deletes()" style="font-size: 20px;"></i>  </td>
+                                                                    <td><a href="" data-toggle="modal" data-target="#view"><i class="fi fi-rr-eye text-secondary" style="font-size: 20px;"></i></a>  </td>
                                                                 </tr> 
                                                                 <?php }?>
                                                                
@@ -211,7 +211,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                
+                                               
                                                 <div class="col-sm-6">
                                                     <label for="">Contact</label>
                                                     <input type="text" class="form-control" name="" id="">

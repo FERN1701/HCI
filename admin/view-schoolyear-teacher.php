@@ -242,7 +242,7 @@
                                             <div class="col-xl-6 col-md-12">
                                                 <div class="card table-card">
                                                     <div class="card-header">
-                                                        <h5>User’s Logs</h5>
+                                                        <h5>Teachers List</h5>
                                                         <div class="card-header-right">
                                                             <ul class="list-unstyled card-option">
                                                                 <li><i class="fa fa fa-wrench open-card-option"></i></li>
@@ -255,66 +255,36 @@
                                                     </div>
                                                     <div class="card-block">
                                                         <div class="table-responsive">
-                                                            <table class="table table-hover m-b-0 without-header">
-                                                                <tbody>
+                                                        <table id="example" class="display" style="width:100%">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Teachers Name</th>
+                                                                    <th>Department</th>
+                                                                    <th>Email</th>
+                                                                    
+                                                                   
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <?php $a = 1; $b = 1; $c = 1; for ($i=0; $i < 25 ; $i++) {  ?>
                                                                     <tr>
-                                                                        <td>
-                                                                            <div class="d-inline-block align-middle">
-                                                                                <img src="assets/images/avatar-4.jpg" alt="user image" class="img-radius img-40 align-top m-r-15">
-                                                                                <div class="d-inline-block">
-                                                                                    <h6>Shirley Hoe</h6>
-                                                                                    
-                                                                                </div>
-                                                                            </div>
-                                                                        </td>
-                                                                        <td class="text-right">
-                                                                            <h6 class="f-w-700">Delete Comments</i></h6>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>
-                                                                            <div class="d-inline-block align-middle">
-                                                                                <img src="assets/images/avatar-2.jpg" alt="user image" class="img-radius img-40 align-top m-r-15">
-                                                                                <div class="d-inline-block">
-                                                                                    <h6>James Alexander</h6>
-                                                                                 
-                                                                                </div>
-                                                                            </div>
-                                                                        </td>
-                                                                        <td class="text-right">
-                                                                            <h6 class="f-w-700">Add Blogs</h6>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>
-                                                                            <div class="d-inline-block align-middle">
-                                                                                <img src="assets/images/avatar-4.jpg" alt="user image" class="img-radius img-40 align-top m-r-15">
-                                                                                <div class="d-inline-block">
-                                                                                    <h6>Shirley Hoe</h6>
-                                                                                    
-                                                                                </div>
-                                                                            </div>
-                                                                        </td>
-                                                                        <td class="text-right">
-                                                                            <h6 class="f-w-700">Payed Organizations Fees</h6>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>
-                                                                            <div class="d-inline-block align-middle">
-                                                                                <img src="assets/images/avatar-2.jpg" alt="user image" class="img-radius img-40 align-top m-r-15">
-                                                                                <div class="d-inline-block">
-                                                                                    <h6>Nick Xander</h6>
-                                                                                   
-                                                                                </div>
-                                                                            </div>
-                                                                        </td>
-                                                                        <td class="text-right">
-                                                                            <h6 class="f-w-700">Add Comments</h6>
-                                                                        </td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
+                                                                    <td>teacher <?php echo $a++?></td>
+                                                                    <td><?php if(rand(1,3) == 1){ echo "CS Department";}elseif(rand(1,3) == 2){ echo "IT Department";}else{ echo "Associate in Technology";}?></td>
+                                                                    <td>teacher<?php echo $c++?>@gmail.com</td>
+                                                                    </tr> 
+                                                                <?php }?>
+                                                               
+                                                                
+                                                            </tbody>
+                                                            <tfoot>
+                                                                <tr>
+                                                                <th>Teachers Name</th>
+                                                                    <th>Department</th>
+                                                                    <th>Email</th>
+                                                                   
+                                                                </tr>
+                                                            </tfoot>
+                                                        </table>
 
                                                         </div>
                                                     </div>
@@ -380,7 +350,9 @@
             </div>
         </div>
     </div>
-   
+   <script>
+    new DataTable('#example');
+   </script>
     <script type="text/javascript" src="assets/js/jquery/jquery.min.js "></script>
     <script type="text/javascript" src="assets/js/jquery-ui/jquery-ui.min.js "></script>
     <script type="text/javascript" src="assets/js/popper.js/popper.min.js"></script>

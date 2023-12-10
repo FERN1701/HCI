@@ -231,7 +231,9 @@
                                                 <div class="modal-dialog  modal-lg">
                                                     <div class="modal-content">
                                                         <div class="modal-header">
-                                                            <h5 class="modal-title" id="feesLabel"> Organization Fees</h5>
+                                                            <h5 class="modal-title" id="feesLabel"> Organization Fees SY 20## - 20## / <a href="viewallfees.php">View All</a></h5>
+                                                            <br>
+                                                            
                                                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                                     <span aria-hidden="true">&times;</span>
                                                                 </button>
@@ -244,9 +246,8 @@
                                                                     <th>Section</th>
                                                                     <th>Department</th>
                                                                     <th>Email</th>
-                                                                    <th>Fees 1</th>
-                                                                    <th>Fees 2</th>
-                                                                    <th>Fees 3</th>
+                                                                    <th>First Semester</th>
+                                                                    <th>Second Semester</th>
                                                                     
                                                                 </tr>
                                                             </thead>
@@ -254,8 +255,7 @@
                                                                 <?php $a = 1; $b = 1; $c = 1;  ;for ($i=0; $i < 30  ; $i++) { 
                                                                     $r1 = rand(111,999);
                                                                     $r2 = rand(111,999);
-                                                                    $r3 = rand(111,999);
-                                                                    ?>
+                                                                   ?>
                                                                     <tr>
                                                                     <td>Student <?php echo $a++?></td>
                                                                     <td>section <?php echo rand(1,4)?></td>
@@ -264,7 +264,6 @@
                                                                     <td>student@gmail.com</td>
                                                                     <td class="<?php if($r1 > 300){ echo "bg-success"; }else{ echo "bg-warning";}?>"><?php if($r1 > 300){ echo "fully paid"; }else{ echo "Unpaid";}?></td>
                                                                     <td class="<?php if($r2 > 300){ echo "bg-success"; }else{ echo "bg-warning";}?>"><?php if($r2 > 300){ echo "fully paid"; }else{ echo "Unpaid";}?></td>
-                                                                    <td class="<?php if($r3 > 300){ echo "bg-success"; }else{ echo "bg-warning";}?>"><?php if($r3 > 300){ echo "fully paid"; }else{ echo "Unpaid";}?></td>
                                                                     
                                                                      </tr> 
                                                                 <?php }?>
@@ -273,11 +272,11 @@
                                                             <tfoot>
                                                                 <tr>
                                                                 <th>Students</th>
+                                                                    <th>Section</th>
                                                                     <th>Department</th>
                                                                     <th>Email</th>
-                                                                    <th>Fees 1</th>
-                                                                    <th>Fees 2</th>
-                                                                    <th>Fees 3</th>
+                                                                    <th>First Semester</th>
+                                                                    <th>Second Semester</th>
                                                                 </tr>
                                                             </tfoot>
                                                         </table>

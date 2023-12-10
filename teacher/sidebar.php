@@ -38,6 +38,15 @@
                                 </li>
                             </ul>
                             <ul class="pcoded-item pcoded-left-item">
+                                <li class="<?php if($main == 9000){ echo "active";} ?>">
+                                    <a href="school-year-settings.php" class="waves-effect waves-dark">
+                                        <span class="pcoded-micon"><i class="fi fi-rr-calendar-clock"></i><b>D</b></span>
+                                        <span class="pcoded-mtext">School Year Section</span>
+                                        <span class="pcoded-mcaret"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="pcoded-item pcoded-left-item">
                                 <li class="<?php if($main == 2){ echo "active";} ?>">
                                     <a href="student.php" class="waves-effect waves-dark">
                                         <span class="pcoded-micon"><i class="ti-user"></i><b>FC</b></span>

@@ -96,105 +96,58 @@
                                     <!-- Page-body start -->
                                     <div class="page-body">
                                         <div class="row">
-                                        <div class="col-xl-4 col-md-12">
-                                               
-                                               <div class="card mat-stat-card">
-                                                   <div class="card-block">
-                                                       <div class="row align-items-center b-b-default">
-                                                           
-                                                           <div class="col-sm-12 p-b-20 p-t-20">
-                                                               <div class="row align-items-center text-center">
-                                                                   <div class="col-4 p-r-0">
-                                                                   <i class="far fa-user text-c-success f-24"></i>
-                                                                   </div>
-                                                                   <div class="col-8 p-l-0">
-                                                                       <h5><?php echo $stud = 81;?></h5>
-                                                                       <p class="text-muted m-b-0">Students</p>
-                                                                   </div>
-                                                               </div>
-                                                           </div>
-                                                       </div>
-                                                       
-                                                   </div>
-                                               </div>
-                                           </div>
+                                        
                                            
-                                           <div class="col-xl-8 col-md-12">
-                                               
-                                                <div class="card mat-stat-card">
-                                                    <div class="card-block">
-                                                        <div class="row align-items-center b-b-default">
-                                                        <div class="col-sm-4 p-b-20 p-t-20">
-                                                          
-                                                                <div class="row align-items-center text-center">
-                                                                    <div class="col-4 p-r-0">
-                                                                    <i class="fi fi-rr-exclamation f-24"></i>
-                                                                    </div>
-                                                                    <div class="col-8 p-l-0">
-                                                                        <h5><?php echo rand(11,81)?></h5>
-                                                                        <p class="text-muted m-b-0">Unpaid Gender</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-sm-4 p-b-20 p-t-20">
-                                                                <div class="row align-items-center text-center">
-                                                                    <div class="col-4 p-r-0">
-                                                                    <i class="fi fi-rr-exclamation f-24"></i>
-                                                                    </div>
-                                                                    <div class="col-8 p-l-0">
-                                                                        <h5><?php echo rand(11,81)?></h5>
-                                                                        <p class="text-muted m-b-0">Unpaid CCS Council</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div> 
-                                                            <div class="col-sm-4 p-b-20 p-t-20">
-                                                                <div class="row align-items-center text-center">
-                                                                    <div class="col-4 p-r-0">
-                                                                    <i class="fi fi-rr-exclamation f-24"></i>
-                                                                    </div>
-                                                                    <div class="col-8 p-l-0">
-                                                                        <h5><?php echo rand(11,81)?></h5>
-                                                                        <p class="text-muted m-b-0">Unpaid PSITS</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                           
                                             
                                         </div>
                                         <div class="card">
                                             <div class="card-header">
-                                                Students
+                                                General Organization Fees (Gender Club)
                                             </div>
                                             <div class="card-body">
+                                            <div class="table-responsive">
                                             <table id="example" class="display" style="width:100%">
                                                             <thead>
                                                                 <tr>
                                                                     <th>Students</th>
                                                                     <th>Email</th>
-                                                                    <th>Gender</th>
-                                                                    <th>CCS Council</th>
-                                                                    <th>PSITS</th>
+                                                                    <th>Department</th>
+                                                                    <th>20## - 20## (1st Semester)</th>
+                                                                    <th>20## - 20## (2nd Semester)</th>
+                                                                    <th>20## - 20## (1st Semester)</th>
+                                                                    <th>20## - 20## (2nd Semester)</th>
+                                                                    <th>20## - 20## (1st Semester)</th>
+                                                                    <th>20## - 20## (2nd Semester)</th>
+                                                                    <th>20## - 20## (2nd Semester)</th>
                                                                     <th>Action</th>
+                                                                    
                                                                    
                                                                 </tr>
                                                             </thead>
                                                             <tbody>
-                                                                <?php $a = 1; $b = 1; $c = 1;  ;for ($i=0; $i < $stud  ; $i++) { 
+                                                                <?php $a = 1; $b = 1; $c = 1;  ;for ($i=0; $i < 13  ; $i++) { 
                                                                     $r1 = rand(111,999);
                                                                     $r2 = rand(111,999);
                                                                     $r3 = rand(111,999);
+                                                                    $r4 = rand(111,999);
+                                                                    $r5 = rand(111,999);
+                                                                    $r6 = rand(111,999);
+                                                                    $r7 = rand(111,999);
                                                                     ?>
                                                                     <tr>
                                                                     <td>Student <?php echo $a++?></td>
                                                                     <td>student@gmail.com</td>
+                                                                    <td><?php if(rand(1,3) == 1){ echo "CS Department";}elseif(rand(1,3) == 2){ echo "IT Department";}else{ echo "Associate in Technology";}?></td>
                                                                     <td class="<?php if($r1 > 300){ echo "bg-success"; }else{ echo "bg-warning";}?>"><?php if($r1 > 300){ echo "Paid"; }else{ echo "Unpaid";}?></td>
                                                                     <td class="<?php if($r2 > 300){ echo "bg-success"; }else{ echo "bg-warning";}?>"><?php if($r2 > 300){ echo "Paid"; }else{ echo "Unpaid";}?></td>
                                                                     <td class="<?php if($r3 > 300){ echo "bg-success"; }else{ echo "bg-warning";}?>"><?php if($r3 > 300){ echo "Paid"; }else{ echo "Unpaid";}?></td>
+                                                                    <td class="<?php if($r4 > 300){ echo "bg-success"; }else{ echo "bg-warning";}?>"><?php if($r3 > 300){ echo "Paid"; }else{ echo "Unpaid";}?></td>
+                                                                    <td class="<?php if($r5 > 300){ echo "bg-success"; }else{ echo "bg-warning";}?>"><?php if($r3 > 300){ echo "Paid"; }else{ echo "Unpaid";}?></td>
+                                                                    <td class="<?php if($r6 > 300){ echo "bg-success"; }else{ echo "bg-warning";}?>"><?php if($r3 > 300){ echo "Paid"; }else{ echo "Unpaid";}?></td>
+                                                                    <td class="<?php if($r7 > 300){ echo "bg-success"; }else{ echo "bg-warning";}?>"><?php if($r3 > 300){ echo "Paid"; }else{ echo "Unpaid";}?></td>
                                                                     
-                                                                    <td><a href=""><i class="fi fi-rr-eye text-secondary" style="font-size: 20px;"></i></a> <a href=""><i class="fi fi-rr-edit text-secondary" style="font-size: 20px;"></i></a> <a href=""><i class="fi fi-rr-trash-xmark text-danger" style="font-size: 20px;"></i></a>  </td>
+                                                                    <td><a href="" onclick="alert('Notify this person')"><i class="fi fi-rr-bell-ring text-2ndary" style="font-size: 20px;"></i> </td>
                                                                 </tr> 
                                                                 <?php }?>
                                                                 
@@ -203,14 +156,19 @@
                                                                 <tr>
                                                                 <th>Students</th>
                                                                     <th>Email</th>
-                                                                    <th>Gender</th>
-                                                                    <th>CCS Council</th>
-                                                                    <th>PSITS</th>
+                                                                    <th>Department</th>
+                                                                    <th>20## - 20## (1st Semester)</th>
+                                                                    <th>20## - 20## (2nd Semester)</th>
+                                                                    <th>20## - 20## (1st Semester)</th>
+                                                                    <th>20## - 20## (2nd Semester)</th>
+                                                                    <th>20## - 20## (1st Semester)</th>
+                                                                    <th>20## - 20## (2nd Semester)</th>
+                                                                    <th>20## - 20## (2nd Semester)</th>
                                                                     <th>Action</th>
-                                                                   
                                                                 </tr>
                                                             </tfoot>
                                                         </table>
+                                            </div>
                                             </div>
                                         </div>
                                     </div>

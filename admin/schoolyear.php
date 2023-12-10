@@ -116,7 +116,7 @@
                                                                     <tr>
                                                                     <td><?php echo $a++?></td>
                                                                     <td>Year 20## - 20##</td>
-                                                                    <td><a href="view-schoolyear.php" class="btn btn-primary" data-toggle="modal" data-target="#view">View History</a>  </td>
+                                                                    <td><a href="view-schoolyear.php" class="btn btn-primary" >View History</a>  </td>
                                                                 </tr> 
                                                                 <?php }?>
                                                                

@@ -100,14 +100,13 @@
                                             
                                                 <div class="card">
                                                     <div class="card-header">
-                                                        Students / <a  class="btn"  data-toggle="modal" data-target="#staticBackdrop" >Add Students</a>
+                                                        List of Advisory Years
                                                     </div>
                                                     <div class="card-body">
                                                     <table id="example" class="display" style="width:100%">
                                                             <thead>
-                                                                <tr>
-                                                                    <th>Student Name</th>
-                                                                    <th>email</th>
+                                                                <tr><th>#</th>
+                                                                    <th>School Year</th>
                                                                     <th>Action</th>
                                                                    
                                                                 </tr>
@@ -115,9 +114,9 @@
                                                             <tbody>
                                                                 <?php $a = 1; $b = 1; $c = 1; for ($i=0; $i < 25 ; $i++) {  ?>
                                                                     <tr>
-                                                                    <td>student <?php echo $a++?></td>
-                                                                    <td>student<?php echo $c++?>@gmail.com</td>
-                                                                    <td><a href="" data-toggle="modal" data-target="#view"><i class="fi fi-rr-eye text-secondary" style="font-size: 20px;"></i></a> <i class="fi fi-rr-trash-xmark text-danger" onclick="deletes()" style="font-size: 20px;"></i>  </td>
+                                                                    <td><?php echo $a++?></td>
+                                                                    <td>School Year 20## - 20##</td>
+                                                                    <td><a href="past-advisor-students.php" class="btn btn-primary">View List</a></td>
                                                                 </tr> 
                                                                 <?php }?>
                                                                
@@ -125,8 +124,8 @@
                                                             </tbody>
                                                             <tfoot>
                                                                 <tr>
-                                                                <th>Student Name</th>
-                                                                    <th>email</th>
+                                                                <th>#</th>
+                                                                    <th>School Year</th>
                                                                     <th>Action</th>
                                                                 </tr>
                                                             </tfoot>
@@ -211,7 +210,10 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                
+                                                <div class="col-sm-6">
+                                                    <label for="">Age</label>
+                                                    <input type="text" class="form-control" name="" id="">
+                                                </div>
                                                 <div class="col-sm-6">
                                                     <label for="">Contact</label>
                                                     <input type="text" class="form-control" name="" id="">

@@ -141,7 +141,7 @@
 #progressbar li {
     list-style-type: none;
     font-size: 15px;
-    width: 33%;
+    width: 50%;
     float: left;
     position: relative;
     font-weight: 400
@@ -317,45 +317,21 @@
                                                                             <!-- progressbar -->
                                                                             <center>
                                                                             <ul id="progressbar">
-                                                                                <li class="active" id="account"><strong>Year Details</strong></li>
-                                                                                <li id="personal"><strong>Tranfer Accounts</strong></li>
+                                                                                <li class="active" id="personal"><strong>Tranfer Accounts</strong></li>
                                                                                 <li id="confirm"><strong>Success</strong></li>
                                                                             </ul></center>
                                                                             <div class="progress">
                                                                                 <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
                                                                             </div> <br> <!-- fieldsets -->
+                                                                            
                                                                             <fieldset>
                                                                                 <div class="form-card">
                                                                                     <div class="row">
                                                                                         <div class="col-7">
-                                                                                            <h2 class="fs-title">Select Year</h2>
+                                                                                            <h2 class="fs-title">List of Advisory Student from past School year</h2>
                                                                                         </div>
                                                                                         <div class="col-5">
-                                                                                            <h2 class="steps">Step 1 - 3</h2>
-                                                                                        </div>
-                                                                                    </div> 
-                                                                                    <div class="row">
-                                                                                        <div class="col-sm-6">
-                                                                                            <label class="fieldlabels">Year Start</label> 
-                                                                                            <input type="number" name="" class="form-control" id="">
-                                                                                        </div>
-                                                                                        <div class="col-sm-6">
-                                                                                            <label class="fieldlabels">Year End</label> 
-                                                                                            <input type="number" name="" class="form-control" id="">
-                                                                                        </div>
-                                                                                    </div>
-
-                                                                                            
-                                                                                </div> <input type="button" name="next" class="next action-button" value="Next" />
-                                                                            </fieldset>
-                                                                            <fieldset>
-                                                                                <div class="form-card">
-                                                                                    <div class="row">
-                                                                                        <div class="col-7">
-                                                                                            <h2 class="fs-title">Teacher to Serve this School Year</h2>
-                                                                                        </div>
-                                                                                        <div class="col-5">
-                                                                                            <h2 class="steps">Step 2 - 3</h2>
+                                                                                            <h2 class="steps">Step 1 - 2</h2>
                                                                                         </div>
                                                                                     </div> 
                                                                                     <div class="row">
@@ -365,8 +341,7 @@
                                                                                                 <tr>
                                                                                                     
                                                                                                     <th>Select </th>
-                                                                                                    <th>Teachers Name</th>
-                                                                                                    <th>Department</th>
+                                                                                                    <th>Student Name</th>
                                                                                                     <th>Email</th>
                                                                                                     <th>Status</th>
                                                                                                 
@@ -376,9 +351,8 @@
                                                                                                 <?php $a = 1; $b = 1; $c = 1; for ($i=0; $i < 25 ; $i++) {  ?>
                                                                                                     <tr>
                                                                                                     <td><input type="checkbox" name="" id=""></td>
-                                                                                                    <td>teacher <?php echo $a++?></td>
-                                                                                                    <td><?php if(rand(1,3) == 1){ echo "CS Department";}elseif(rand(1,3) == 2){ echo "IT Department";}else{ echo "Associate in Technology";}?></td>
-                                                                                                    <td>teacher<?php echo $c++?>@gmail.com</td>
+                                                                                                    <td>Student <?php echo $a++?></td>
+                                                                                                    <td>student<?php echo $c++?>@gmail.com</td>
                                                                                                     <td><?php if(rand(1,3) == 1){ echo "Validated";}elseif(rand(1,3) == 2){ echo "Validated";}else{ echo "Not Verified";}?></td>
                                                                                                     </tr> 
                                                                                                 <?php }?>
@@ -388,8 +362,7 @@
                                                                                             <tfoot>
                                                                                                 <tr>
                                                                                                 <th>Select</th>
-                                                                                                <th>Teachers Name</th>
-                                                                                                    <th>Department</th>
+                                                                                                <th>Student Name</th>
                                                                                                     <th>Email</th>
                                                                                                     <th>Status</th>
                                                                                                     
@@ -400,7 +373,7 @@
                                                                                     </div>
                                                                                 
                                                                                 
-                                                                                </div> <input type="button" name="next" class="next action-button" value="Next" /> <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+                                                                                </div> <input type="button" name="next" class="next action-button" value="Next" /> 
                                                                             </fieldset>
                                                                             
                                                                             <fieldset>
@@ -432,7 +405,7 @@
                                                         <div class="card-footer">
                                                             <div class="row">
                                                                 <div class="col-sm-6">
-                                                                    <a href="schoolyear.php" class="btn btn-primary">Show History School Year</a>
+                                                                    <a href="past-advisor.php" class="btn btn-primary">Show your past Advisory</a>
                                                                 </div>
                                                             </div>
                                                         </div>
