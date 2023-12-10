@@ -336,10 +336,17 @@
                                                                                     </div> 
                                                                                     <div class="row">
                                                                                         <div class="col-sm-6">
+                                                                                            <label class="fieldlabels">Semester</label> 
+                                                                                            <select name="" class="form-control" id="">
+                                                                                                <option value="">First Semester</option>
+                                                                                                <option value="">First Semester</option>
+                                                                                            </select>
+                                                                                        </div>
+                                                                                        <div class="col-sm-3">
                                                                                             <label class="fieldlabels">Year Start</label> 
                                                                                             <input type="number" name="" class="form-control" id="">
                                                                                         </div>
-                                                                                        <div class="col-sm-6">
+                                                                                        <div class="col-sm-3">
                                                                                             <label class="fieldlabels">Year End</label> 
                                                                                             <input type="number" name="" class="form-control" id="">
                                                                                         </div>
