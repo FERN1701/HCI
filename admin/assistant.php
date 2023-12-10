@@ -122,7 +122,7 @@
                                                                     <td>assitant<?php echo $c++?>@gmail.com</td>
                                                                     <td><?php if(rand(1,3) == 1){ echo "Validated";}elseif(rand(1,3) == 2){ echo "Validated";}else{ echo "Not Verified";}?></td>
                                                                     
-                                                                    <td><a href="" data-toggle="modal" data-target="#view"><i class="fi fi-rr-eye text-secondary" style="font-size: 20px;"></i></a> <i class="fi fi-rr-lock text-danger" onclick="showSwalDialog()" style="font-size: 20px;"></i> <i class="fi fi-rr-trash-xmark text-danger" onclick="deletes()" style="font-size: 20px;"></i>  </td>
+                                                                    <td><a href="" data-toggle="modal" data-target="#view"><i class="fi fi-rr-eye text-secondary" style="font-size: 20px;"></i></a> <i class="fi fi-rr-lock text-danger" onclick="showSwalDialog()" style="font-size: 20px;"></i> </td>
                                                                 </tr> 
                                                                 <?php }?>
                                                                
@@ -172,9 +172,10 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-6">
-                                                    <label for="">Age</label>
+                                                    <label for="">Email</label>
                                                     <input type="text" class="form-control" name="" id="">
                                                 </div>
+                                                
                                                 <div class="col-sm-6">
                                                     <label for="">Contact</label>
                                                     <input type="text" class="form-control" name="" id="">
@@ -205,21 +206,13 @@
                                         </div>
                                         <div class="modal-body">
                                             <div class="row">
-                                                <div class="col-sm-6">
-                                                    <label for="">First Name</label>
-                                                    <input type="text" name="" class="form-control" id="">
-                                                </div>
-                                                <div class="col-sm-6">
-                                                <label for="">Last Name</label>
-                                                    <input type="text" name="" class="form-control" id="">
-                                                </div>
-                                                <div class="col-sm-6">
-                                                <label for="">Password</label>
-                                                    <input type="text" name="" class="form-control" id="">
-                                                </div>
-                                                <div class="col-sm-6">
-                                                <label for="">Confirm Password</label>
-                                                    <input type="text" name="" class="form-control" id="">
+                                            <div class="col-sm-12">
+                                                <label for="">Teacher</label>
+                                                    <select name="" class="form-control" id="">
+                                                        <?php $az = 1; $bz = 1; $cz = 1;for ($i=0; $i < rand(10,20); $i++) { ?>
+                                                            <option value="">Teacher Name <?php echo $az++?></option>
+                                                       <?php }?>
+                                                    </select>
                                                 </div>
                                                 <div class="col-sm-6 mt-2">
                                                     <p class="btn btn-primary" onclick="showSwalDialog()">submit</p>

@@ -121,7 +121,7 @@
                                                                     <td><?php if(rand(1,3) == 1){ echo "CS Department";}elseif(rand(1,3) == 2){ echo "IT Department";}else{ echo "Associate in Technology";}?></td>
                                                                     <td>teacher<?php echo $c++?>@gmail.com</td>
                                                                     <td><?php if(rand(1,3) == 1){ echo "Validated";}elseif(rand(1,3) == 2){ echo "Validated";}else{ echo "Not Verified";}?></td>
-                                                                    <td><a href="" data-toggle="modal" data-target="#view"><i class="fi fi-rr-eye text-secondary" style="font-size: 20px;"></i></a> <a href="" data-toggle="modal" data-target="#edit"><i class="fi fi-rr-edit text-secondary" style="font-size: 20px;"></i></a> <i class="fi fi-rr-trash-xmark text-danger" onclick="deletes()" style="font-size: 20px;"></i> </td>
+                                                                    <td><a href="" data-toggle="modal" data-target="#view"><i class="fi fi-rr-eye text-secondary" style="font-size: 20px;"></i></a> <a href="" data-toggle="modal" data-target="#edit"><i class="fi fi-rr-edit text-secondary" style="font-size: 20px;"></i></a>  </td>
                                                                 </tr> 
                                                                 <?php }?>
                                                                
@@ -171,15 +171,12 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-sm-6">
-                                                    <label for="">Age</label>
-                                                    <input type="text" class="form-control" name="" id="">
-                                                </div>
+                                                
                                                 <div class="col-sm-6">
                                                     <label for="">Contact</label>
                                                     <input type="text" class="form-control" name="" id="">
                                                 </div>
-                                                <div class="col-sm-12">
+                                                <div class="col-sm-6">
                                                     <label for="">Email</label>
                                                     <input type="text" class="form-control" name="" id="">
                                                 </div>
@@ -220,15 +217,12 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-sm-6">
-                                                    <label for="">Age</label>
-                                                    <input type="text" class="form-control" name="" id="">
-                                                </div>
+                                               
                                                 <div class="col-sm-6">
                                                     <label for="">Contact</label>
                                                     <input type="text" class="form-control" name="" id="">
                                                 </div>
-                                                <div class="col-sm-12">
+                                                <div class="col-sm-6">
                                                     <label for="">Email</label>
                                                     <input type="text" class="form-control" name="" id="">
                                                 </div>

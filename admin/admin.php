@@ -171,15 +171,12 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-sm-6">
-                                                    <label for="">Age</label>
-                                                    <input type="text" class="form-control" name="" id="">
-                                                </div>
+                                               
                                                 <div class="col-sm-6">
                                                     <label for="">Contact</label>
                                                     <input type="text" class="form-control" name="" id="">
                                                 </div>
-                                                <div class="col-sm-12">
+                                                <div class="col-sm-6">
                                                     <label for="">Email</label>
                                                     <input type="text" class="form-control" name="" id="">
                                                 </div>
@@ -198,29 +195,23 @@
                                     <div class="modal-dialog modal-dialog-centered">
                                         <div class="modal-content">
                                         <div class="modal-header">
-                                            <h5 class="modal-title" id="staticBackdropLabel">Add Assitant</h5>
+                                            <h5 class="modal-title" id="staticBackdropLabel">Add Administrator</h5>
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                             <span aria-hidden="true">&times;</span>
                                             </button>
                                         </div>
                                         <div class="modal-body">
                                             <div class="row">
-                                                <div class="col-sm-6">
-                                                    <label for="">First Name</label>
-                                                    <input type="text" name="" class="form-control" id="">
+                                            
+                                                <div class="col-sm-12">
+                                                <label for="">Teacher</label>
+                                                    <select name="" class="form-control" id="">
+                                                        <?php $az = 1; $bz = 1; $cz = 1;for ($i=0; $i < rand(10,20); $i++) { ?>
+                                                            <option value="">Teacher Name <?php echo $az++?></option>
+                                                       <?php }?>
+                                                    </select>
                                                 </div>
-                                                <div class="col-sm-6">
-                                                <label for="">Last Name</label>
-                                                    <input type="text" name="" class="form-control" id="">
-                                                </div>
-                                                <div class="col-sm-6">
-                                                <label for="">Password</label>
-                                                    <input type="text" name="" class="form-control" id="">
-                                                </div>
-                                                <div class="col-sm-6">
-                                                <label for="">Confirm Password</label>
-                                                    <input type="text" name="" class="form-control" id="">
-                                                </div>
+                                                
                                                 <div class="col-sm-6 mt-2">
                                                     <p class="btn btn-primary" onclick="showSwalDialog()">submit</p>
                                                 </div>

@@ -8,15 +8,7 @@
                                         <span id="more-details">Administrative pannel <i class="fa fa-caret-down"></i></span>
                                     </div>
                                 </div>
-                                <div class="main-menu-content">
-                                    <ul>
-                                        <li class="more-details">
-                                            <a href="profile.php"><i class="ti-user"></i>View Profile</a>
-                                            
-                                            <a href="../signin.php"><i class="ti-layout-sidebar-left"></i>Logout</a>
-                                        </li>
-                                    </ul>
-                                </div>
+                                
                             </div>
                             <div class="p-15 p-b-0">
                                 <form class="form-material">
@@ -28,11 +20,21 @@
                                 </form>
                             </div>
                             <div class="pcoded-navigation-label">Navigation</div>
+                            
                             <ul class="pcoded-item pcoded-left-item">
                                 <li class="<?php if($main == 1){ echo "active";} ?>">
                                     <a href="index.php" class="waves-effect waves-dark">
                                         <span class="pcoded-micon"><i class="ti-home"></i><b>D</b></span>
                                         <span class="pcoded-mtext">Dashboard</span>
+                                        <span class="pcoded-mcaret"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="pcoded-item pcoded-left-item">
+                                <li class="<?php if($main == 9000){ echo "active";} ?>">
+                                    <a href="school-year-settings.php" class="waves-effect waves-dark">
+                                        <span class="pcoded-micon"><i class="fi fi-rr-calendar-clock"></i><b>D</b></span>
+                                        <span class="pcoded-mtext">School Year Section</span>
                                         <span class="pcoded-mcaret"></span>
                                     </a>
                                 </li>

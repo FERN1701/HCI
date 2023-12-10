@@ -115,15 +115,15 @@
                                                                
                                                                 <tr>
                                                                     <td>BS Computer Science</td>
-                                                                    <td><a href="" data-toggle="modal" data-target="#view"><i class="fi fi-rr-eye text-secondary" style="font-size: 20px;"></i></a> <a href="" data-toggle="modal" data-target="#view"><i class="fi fi-rr-edit text-secondary" style="font-size: 20px;"></i></a> <i class="fi fi-rr-trash-xmark text-danger" onclick="deletes()" style="font-size: 20px;"></i> </td>
+                                                                    <td><a href="" data-toggle="modal" data-target="#view"><i class="fi fi-rr-edit text-secondary" style="font-size: 20px;"></i></a> <i class="fi fi-rr-trash-xmark text-danger" onclick="deletes()" style="font-size: 20px;"></i> </td>
                                                                 </tr> 
                                                                 <tr>
                                                                     <td>BS Information Technology</td>
-                                                                    <td><a href="" data-toggle="modal" data-target="#view"><i class="fi fi-rr-eye text-secondary" style="font-size: 20px;"></i></a> <a href="" data-toggle="modal" data-target="#view"><i class="fi fi-rr-edit text-secondary" style="font-size: 20px;"></i></a> <i class="fi fi-rr-trash-xmark text-danger" onclick="deletes()" style="font-size: 20px;"></i> </td>
+                                                                    <td><a href="" data-toggle="modal" data-target="#view"><i class="fi fi-rr-edit text-secondary" style="font-size: 20px;"></i></a> <i class="fi fi-rr-trash-xmark text-danger" onclick="deletes()" style="font-size: 20px;"></i> </td>
                                                                 </tr> 
                                                                 <tr>
                                                                     <td>Associate In Technology</td>
-                                                                    <td><a href="" data-toggle="modal" data-target="#view"><i class="fi fi-rr-eye text-secondary" style="font-size: 20px;"></i></a> <a href="" data-toggle="modal" data-target="#view"><i class="fi fi-rr-edit text-secondary" style="font-size: 20px;"></i></a> <i class="fi fi-rr-trash-xmark text-danger" onclick="deletes()" style="font-size: 20px;"></i> </td>
+                                                                    <td><a href="" data-toggle="modal" data-target="#view"><i class="fi fi-rr-edit text-secondary" style="font-size: 20px;"></i></a> <i class="fi fi-rr-trash-xmark text-danger" onclick="deletes()" style="font-size: 20px;"></i> </td>
                                                                 </tr> 
                                                              
                                                                
