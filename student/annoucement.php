@@ -107,7 +107,7 @@
                                                                 <div class="card-body">
                                                                     <h5 class="card-title">Announcement Title </h5>
                                                                     <p class="card-text">Announcement highlight Description</p>
-                                                                    <a href="#" class="btn btn-primary">View Announcement</a>
+                                                                    <a href="announcement-description.php" class="btn btn-primary">View Announcement</a>
                                                                 </div>
                                                                 </div>
                                                         </div>

@@ -107,7 +107,7 @@
                                                                 <div class="card-body">
                                                                     <h5 class="card-title">Blog Title </h5>
                                                                     <p class="card-text">Blog highlight Description</p>
-                                                                    <a href="#" class="btn btn-primary">View Blog</a>
+                                                                    <a href="blog-description.php" class="btn btn-primary">View Blog</a>
                                                                 </div>
                                                                 </div>
                                                         </div>

@@ -262,8 +262,8 @@
                                                                     
                                                                     <td><?php if(rand(1,3) == 1){ echo "CS Department";}elseif(rand(1,3) == 2){ echo "IT Department";}else{ echo "Associate in Technology";}?></td>
                                                                     <td>student@gmail.com</td>
-                                                                    <td class="<?php if($r1 > 300){ echo "bg-success"; }else{ echo "bg-warning";}?>"><?php if($r1 > 300){ echo "fully paid"; }else{ echo "Unpaid";}?></td>
-                                                                    <td class="<?php if($r2 > 300){ echo "bg-success"; }else{ echo "bg-warning";}?>"><?php if($r2 > 300){ echo "fully paid"; }else{ echo "Unpaid";}?></td>
+                                                                    <td  <?php if($r1 > 300){ echo "class='bg-success'";   }else{ echo "class='bg-warning' onclick='myFunction()'";}?>><?php if($r1 > 300){ echo "fully paid"; }else{ echo "Unpaid";}?></td>
+                                                                    <td  <?php if($r2 > 300){ echo "class='bg-success'"; }else{ echo "class='bg-warning' onclick='myFunction()'";}?>><?php if($r2 > 300){ echo "fully paid"; }else{ echo "Unpaid";}?></td>
                                                                     
                                                                      </tr> 
                                                                 <?php }?>

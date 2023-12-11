@@ -35,7 +35,7 @@
                     <div class="row">
 
                         <div class="col-12">
-                            <h2 class="mb-5"><?php echo $title?>'s <span>Org</span></h2>
+                            <h2 class="mb-5">College of Computing Studies's <span>Org</span></h2>
                         </div>
                         <?php $x = 1; $y = 1;$z = 1; for ($i=0; $i < 5; $i++) { ?>
                             <div class="col-lg-4 mb-4 col-12">

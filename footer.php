@@ -3,7 +3,7 @@
                 <div class="row">
 
                     <div class="col-lg-3 col-10 me-auto mb-4">
-                        <h4 class="text-white mb-3"><a href="index.html"><?php echo $title?></h4>
+                        <h4 class="text-white mb-3"><a href="index.html">College of Computing Studies</h4>
                         <p class="copyright-text text-muted mt-lg-5 mb-4 mb-lg-0"><strong>Project of Human Computer Interaction</strong></p>
                         <br>
                         <p class="copyright-text"> <a href="" target="_blank"></a></p>

@@ -107,7 +107,8 @@
                                                             <thead>
                                                                 <tr>
                                                                     <th>Student Name</th>
-                                                                    <th>email</th>
+                                                                    <th>Email</th>
+                                                                    <th>Section</th>
                                                                     <th>Action</th>
                                                                    
                                                                 </tr>
@@ -117,6 +118,7 @@
                                                                     <tr>
                                                                     <td>student <?php echo $a++?></td>
                                                                     <td>student<?php echo $c++?>@gmail.com</td>
+                                                                    <td><?php if(rand(1,3) == 1){ echo "CS-4A";}elseif(rand(1,3) == 2){ echo "CS-3B";}else{ echo "CS-4C";}?></td>
                                                                     <td><a href="" data-toggle="modal" data-target="#view"><i class="fi fi-rr-eye text-secondary" style="font-size: 20px;"></i></a> <i class="fi fi-rr-trash-xmark text-danger" onclick="deletes()" style="font-size: 20px;"></i>  </td>
                                                                 </tr> 
                                                                 <?php }?>
@@ -126,7 +128,8 @@
                                                             <tfoot>
                                                                 <tr>
                                                                 <th>Student Name</th>
-                                                                    <th>email</th>
+                                                                    <th>Email</th>
+                                                                    <th>Section</th>
                                                                     <th>Action</th>
                                                                 </tr>
                                                             </tfoot>

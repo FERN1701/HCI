@@ -339,7 +339,7 @@
                                                                                             <label class="fieldlabels">Semester</label> 
                                                                                             <select name="" class="form-control" id="">
                                                                                                 <option value="">First Semester</option>
-                                                                                                <option value="">First Semester</option>
+                                                                                                <option value="">Second Semester</option>
                                                                                             </select>
                                                                                         </div>
                                                                                         <div class="col-sm-3">

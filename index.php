@@ -22,9 +22,9 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-6 col-10">
-                                    <h1 class="slick-title"><?php echo $title?></h1>
+                                    <h1 class="slick-title">College of Computing Studies</h1>
 
-                                    <p class="lead text-white mt-lg-3 mb-lg-5">Explore limitless tech opportunities at WMSU's <?php echo $title?>! Expert faculty, cutting-edge programs, and innovation await. Start your tech journey now!</p>
+                                    <p class="lead text-white mt-lg-3 mb-lg-5">Explore limitless tech opportunities at WMSU's College of Computing Studies! Expert faculty, cutting-edge programs, and innovation await. Start your tech journey now!</p>
 
                                     <a href="about.html" class="btn custom-btn">Learn more about us</a>
                                 </div>
@@ -94,7 +94,7 @@
                     <div class="row">
 
                         <div class="col-12 text-center">
-                            <h2 class="mb-5">Get started with <span><?php echo $title?></span></h2>
+                            <h2 class="mb-5">Get started with <span>College of Computing Studies</span></h2>
                         </div>
 
                         <div class="col-lg-2 col-12 mt-auto mb-auto">

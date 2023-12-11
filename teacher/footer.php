@@ -53,6 +53,19 @@ function deletes() {
             );
         }
 </script>
+
+<script>
+function myFunction() {
+  let text;
+  let person = prompt("Enter reference Number:","RN:");
+  if (person == null || person == "") {
+    text = "Cancelled Promt";
+  } else {
+    text = "Refernce Number " + person + " is Saved";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+</script>
     <script type="text/javascript" src="assets/js/jquery/jquery.min.js "></script>
     <script type="text/javascript" src="assets/js/jquery-ui/jquery-ui.min.js "></script>
     <script type="text/javascript" src="assets/js/popper.js/popper.min.js"></script>

@@ -141,7 +141,7 @@
 #progressbar li {
     list-style-type: none;
     font-size: 15px;
-    width: 50%;
+    width: 33%;
     float: left;
     position: relative;
     font-weight: 400
@@ -317,13 +317,48 @@
                                                                             <!-- progressbar -->
                                                                             <center>
                                                                             <ul id="progressbar">
-                                                                                <li class="active" id="personal"><strong>Tranfer Accounts</strong></li>
+                                                                                <li id="account" class="active"><strong>Year And Section</strong></li>
+                                                                                <li id="personal"><strong>Tranfer Accounts</strong></li>
                                                                                 <li id="confirm"><strong>Success</strong></li>
                                                                             </ul></center>
                                                                             <div class="progress">
                                                                                 <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
                                                                             </div> <br> <!-- fieldsets -->
-                                                                            
+                                                                            <fieldset>
+                                                                                <div class="form-card">
+                                                                                    <div class="row">
+                                                                                        <div class="col-7">
+                                                                                            <h2 class="fs-title">Select Year</h2>
+                                                                                        </div>
+                                                                                        <div class="col-5">
+                                                                                            <h2 class="steps">Step 1 - 3</h2>
+                                                                                        </div>
+                                                                                    </div> 
+                                                                                    <div class="row">
+                                                                                        <div class="col-sm-6">
+                                                                                            <label class="fieldlabels">Year Level</label> 
+                                                                                            <select name="" class="form-control" id="">
+                                                                                                <option value="">1st Year Level</option>
+                                                                                                <option value="">2nd Year Level</option>
+                                                                                                <option value="">3rd Year Level</option>
+                                                                                                <option value="">4th Year Level</option>
+                                                                                                <option value="">5th Year Level</option>
+                                                                                            </select>
+                                                                                        </div>
+                                                                                        <div class="col-sm-6">
+                                                                                            <label class="fieldlabels">Your Advisory Section</label> 
+                                                                                            <select name="" class="form-control" id="">
+                                                                                                <option value="">Section 1</option>
+                                                                                                <option value="">Section 2</option>
+                                                                                                <option value="">Section 3</option>
+                                                                                            </select>
+                                                                                        </div>
+                                                                                        
+                                                                                    </div>
+
+                                                                                            
+                                                                                </div> <input type="button" name="next" class="next action-button" value="Next" />
+                                                                            </fieldset>
                                                                             <fieldset>
                                                                                 <div class="form-card">
                                                                                     <div class="row">

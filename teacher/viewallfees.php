@@ -139,13 +139,13 @@
                                                                     <td>Student <?php echo $a++?></td>
                                                                     <td>student@gmail.com</td>
                                                                     <td><?php if(rand(1,3) == 1){ echo "CS Department";}elseif(rand(1,3) == 2){ echo "IT Department";}else{ echo "Associate in Technology";}?></td>
-                                                                    <td class="<?php if($r1 > 300){ echo "bg-success"; }else{ echo "bg-warning";}?>"><?php if($r1 > 300){ echo "Paid"; }else{ echo "Unpaid";}?></td>
-                                                                    <td class="<?php if($r2 > 300){ echo "bg-success"; }else{ echo "bg-warning";}?>"><?php if($r2 > 300){ echo "Paid"; }else{ echo "Unpaid";}?></td>
-                                                                    <td class="<?php if($r3 > 300){ echo "bg-success"; }else{ echo "bg-warning";}?>"><?php if($r3 > 300){ echo "Paid"; }else{ echo "Unpaid";}?></td>
-                                                                    <td class="<?php if($r4 > 300){ echo "bg-success"; }else{ echo "bg-warning";}?>"><?php if($r3 > 300){ echo "Paid"; }else{ echo "Unpaid";}?></td>
-                                                                    <td class="<?php if($r5 > 300){ echo "bg-success"; }else{ echo "bg-warning";}?>"><?php if($r3 > 300){ echo "Paid"; }else{ echo "Unpaid";}?></td>
-                                                                    <td class="<?php if($r6 > 300){ echo "bg-success"; }else{ echo "bg-warning";}?>"><?php if($r3 > 300){ echo "Paid"; }else{ echo "Unpaid";}?></td>
-                                                                    <td class="<?php if($r7 > 300){ echo "bg-success"; }else{ echo "bg-warning";}?>"><?php if($r3 > 300){ echo "Paid"; }else{ echo "Unpaid";}?></td>
+                                                                    <td <?php if($r1 > 300){ echo "class='bg-success'"; }else{ echo "class='bg-warning' onclick='myFunction()'";}?>><?php if($r1 > 300){ echo "Paid"; }else{ echo "Unpaid";}?></td>
+                                                                    <td <?php if($r2 > 300){ echo "class='bg-success'"; }else{ echo "class='bg-warning' onclick='myFunction()'";}?>><?php if($r2 > 300){ echo "Paid"; }else{ echo "Unpaid";}?></td>
+                                                                    <td <?php if($r3 > 300){ echo "class='bg-success'"; }else{ echo "class='bg-warning' onclick='myFunction()'";}?>><?php if($r3 > 300){ echo "Paid"; }else{ echo "Unpaid";}?></td>
+                                                                    <td <?php if($r4 > 300){ echo "class='bg-success'"; }else{ echo "class='bg-warning' onclick='myFunction()'";}?>><?php if($r4 > 300){ echo "Paid"; }else{ echo "Unpaid";}?></td>
+                                                                    <td <?php if($r5 > 300){ echo "class='bg-success'"; }else{ echo "class='bg-warning' onclick='myFunction()'";}?>><?php if($r5 > 300){ echo "Paid"; }else{ echo "Unpaid";}?></td>
+                                                                    <td <?php if($r6 > 300){ echo "class='bg-success'"; }else{ echo "class='bg-warning' onclick='myFunction()'";}?>><?php if($r6 > 300){ echo "Paid"; }else{ echo "Unpaid";}?></td>
+                                                                    <td <?php if($r7 > 300){ echo "class='bg-success'"; }else{ echo "class='bg-warning' onclick='myFunction()'";}?>><?php if($r7 > 300){ echo "Paid"; }else{ echo "Unpaid";}?></td>
                                                                     
                                                                     <td><a href="" onclick="alert('Notify this person')"><i class="fi fi-rr-bell-ring text-2ndary" style="font-size: 20px;"></i> </td>
                                                                 </tr> 

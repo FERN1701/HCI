@@ -5,7 +5,7 @@
                     </button>
 
                     <a class="navbar-brand" href="index.php">
-                        <strong><?php echo $title?></strong>
+                        <strong>College of Computing Studies</strong>
                     </a>
 
                    

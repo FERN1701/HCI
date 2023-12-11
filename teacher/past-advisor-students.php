@@ -100,14 +100,16 @@
                                             
                                                 <div class="card">
                                                     <div class="card-header">
-                                                        Advisory Students of School Year 20## - 20## 
+                                                        Advisory Students of School Year 20## - 20##
+                                                        <?php if(rand(1,3) == 1){ $section =  "CS-4A";}elseif(rand(1,3) == 2){ $section =  "CS-3B";}else{ $section =  "CS-1C";}?> 
                                                     </div>
                                                     <div class="card-body">
                                                     <table id="example" class="display" style="width:100%">
                                                             <thead>
                                                                 <tr>
                                                                     <th>Student Name</th>
-                                                                    <th>email</th>
+                                                                    <th>Email</th>
+                                                                    <th>Section</th>
                                                                     <th>Action</th>
                                                                    
                                                                 </tr>
@@ -117,6 +119,7 @@
                                                                     <tr>
                                                                     <td>student <?php echo $a++?></td>
                                                                     <td>student<?php echo $c++?>@gmail.com</td>
+                                                                    <td><?php echo $section;?></td>
                                                                     <td><a href="" data-toggle="modal" data-target="#view"><i class="fi fi-rr-eye text-secondary" style="font-size: 20px;"></i></a>  </td>
                                                                 </tr> 
                                                                 <?php }?>
@@ -126,7 +129,8 @@
                                                             <tfoot>
                                                                 <tr>
                                                                 <th>Student Name</th>
-                                                                    <th>email</th>
+                                                                    <th>Email</th>
+                                                                    <th>Section</th>
                                                                     <th>Action</th>
                                                                 </tr>
                                                             </tfoot>
